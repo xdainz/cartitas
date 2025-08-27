@@ -94,4 +94,32 @@
   .footer-text:hover {
     color: var(--bs-dark);
   }
+  .card-title {
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  .card-text.subtext {
+    padding: 0px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: 300;
+    color: #777;
+    transition: color 0.15s ease-in-out;
+  }
+  .card-text.subtext:hover {
+    color: #0d0d0d;
+  }
+  .card-text.price {
+    color: var(--bs-primary);
+    font-weight: bold;
+    padding: 0px;
+  }
+
+  .card-img-top {
+    padding: 10px 10px 0px 10px;
+  }
+
+  .card {
+    background-color: #e7e7e7;
+  }
 }
