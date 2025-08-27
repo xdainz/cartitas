@@ -22,22 +22,6 @@
     font-family: var(--font);
   }
 
-  .btn-outline-primary {
-    color: var(--bs-primary);
-    border-color: var(--bs-primary);
-  }
-
-  .btn-outline-primary:hover {
-    color: var(--bs-dark);
-    background-color: var(--bs-primary);
-  }
-
-  .btn-outline-primary:active {
-    color: var(--bs-dark);
-    background-color: var(--lemon);
-    border-color: var(--lemon);
-  }
-
   .btn-primary {
     color: var(--white);
     background-color: var(--bs-primary);
