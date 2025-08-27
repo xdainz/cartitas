@@ -16,6 +16,11 @@
   --bs-dark: #0d0d0d;
   --bs-dark-rgb: 13, 13, 13;
   --white: #f2f2f2;
+  --font: "Noto Sans", sans-serif;
+
+  body {
+    font-family: var(--font);
+  }
 
   .btn-outline-primary {
     color: var(--bs-primary);
