@@ -43,6 +43,10 @@
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
   }
+  .btn-primary:hover {
+    background-color: var(--bs-tertiary);
+    border-color: var(--bs-tertiary);
+  }
 
   .btn-primary:active {
     color: var(--bs-primary);
