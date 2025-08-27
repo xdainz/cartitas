@@ -1,9 +1,10 @@
 :root {
-  --bs-body-bg: #fff5e1;
-  --bs-primary: #f8bbd0;
-  --bs-primary-rgb: 248, 187, 208;
-  --bs-secondary: #fff9c4;
-  --bs-secondary-rgb: 255, 249, 196;
+  --bs-body-bg: #f2f2f2;
+  --bs-primary: #400235;
+  --bs-primary-rgb: 64, 2, 53;
+  --bs-secondary: #f066f2;
+  --bs-secondary-rgb: 240, 102, 242;
+  --bs-tertiary: #a68a56;
   --bs-success: #c8e6c9;
   --bs-success-rgb: 200, 230, 201;
   --bs-info: #b3e5fc;
@@ -12,27 +13,9 @@
   --bs-warning-rgb: 255, 204, 188;
   --bs-danger: #ffccbc;
   --bs-danger-rgb: 255, 204, 188;
-  --bs-dark: #6d4c41;
+  --bs-dark: #0d0d0d;
   --bs-dark-rgb: 109, 76, 65;
-  --strawberry: #ffcdd2;
-  --blueberry: #c5cae9;
-  --lemon: #fff59d;
-  --cinnamon: #d7ccc8;
-  --frost-white: #f8f9fa;
-
-  .bg-strawberry {
-    background-color: var(--strawberry);
-  }
-
-  .bg-blueberry {
-    background-color: var(--blueberry);
-  }
-  .bg-lemon {
-    background-color: var(--lemon);
-  }
-  .bg-cinnamon {
-    background-color: var(--cinnamon);
-  }
+  --white: #f2f2f2;
 
   .btn-outline-primary {
     color: var(--bs-primary);
@@ -51,15 +34,27 @@
   }
 
   .btn-primary {
-    color: var(--bs-dark);
+    color: var(--white);
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
   }
 
   .btn-primary:active {
-    color: var(--bs-dark);
-    background-color: var(--lemon);
-    border-color: var(--lemon);
+    color: var(--bs-primary);
+    background-color: var(--white);
+    border-color: var(--bs-primary);
+  }
+
+  .btn-secondary {
+    color: var(--white);
+    background-color: var(--bs-tertiary);
+    border-color: var(--bs-tertiary);
+  }
+
+  .btn-secondary:active {
+    color: var(--bs-tertiary);
+    background-color: var(--white);
+    border-color: var(--bs-tertiary);
   }
 
   .btn.btn-nav {
