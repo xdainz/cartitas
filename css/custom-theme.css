@@ -22,6 +22,10 @@
     font-family: var(--font);
   }
 
+  .bg-tertiary {
+    background-color: var(--bs-tertiary);
+  }
+
   .btn-primary {
     color: var(--white);
     background-color: var(--bs-primary);
@@ -85,8 +89,6 @@
   .card-text.subtext {
     padding: 0px;
     margin-bottom: 10px;
-    font-style: italic;
-    font-weight: 300;
     color: #777;
     transition: color 0.15s ease-in-out;
   }
@@ -105,5 +107,8 @@
 
   .card {
     background-color: #e7e7e7;
+    width: 300px;
+    margin: 5px;
+    text-align: center;
   }
 }
