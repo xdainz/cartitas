@@ -63,16 +63,17 @@
   }
 
   .btn.btn-nav:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
-  .btn.btn-nav:active {
-    border-color: var(--bs-primary);
+    background-color: #444;
   }
 
   .btn.btn-nav.active {
-    color: var(--bs-dark);
-    background-color: var(--bs-primary);
+    color: var(--white);
+    background-color: var(--bs-tertiary);
+  }
+
+  .btn.btn-nav.active:hover {
+    color: var(--white);
+    background-color: var(--bs-tertiary);
   }
 
   .footer-text {
