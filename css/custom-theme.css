@@ -83,14 +83,21 @@
         font-size: 1.25rem;
     }
 
-    .card-text.subtext {
+    .subtext {
         padding: 0px;
         margin-bottom: 10px;
         color: #777;
         transition: color 0.15s ease-in-out;
     }
 
-    .card-text.subtext:hover {
+    .non-hover-subtext {
+        padding: 0px;
+        margin-bottom: 10px;
+        color: #777;
+        transition: color 0.15s ease-in-out;
+    }
+
+    .subtext:hover {
         color: #0d0d0d;
     }
 
