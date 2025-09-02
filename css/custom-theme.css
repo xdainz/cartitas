@@ -164,6 +164,12 @@
         font-weight: bold;
     }
 
+    .product-name {
+        height: max-content;
+        max-height: 100px;
+        overflow: hidden;
+    }
+
     .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
