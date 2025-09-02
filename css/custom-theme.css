@@ -134,4 +134,49 @@
         width: 500px;
         height: 500px;
     }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+
+    .buscadormio {
+        width: 500px;
+        position: relative;
+    }
+
+    .btn-ripple-water {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* círculo inicial */
+    .btn-ripple-water::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        width: 20px;
+        /* tamaño inicial más pequeño */
+        height: 20px;
+        background: rgba(173, 216, 230, 0.4);
+        /* azul agua */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.5;
+        pointer-events: none;
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 1s ease-out;
+    }
+
+    /* al pasar el mouse */
+    .btn-ripple-water:hover::after {
+        transform: translate(-50%, -50%) scale(6);
+        /* expansión más grande */
+        opacity: 0;
+    }
+
+    .dropdown-item:hover {
+        background-color: #0d0d0d18;
+    }
 }
