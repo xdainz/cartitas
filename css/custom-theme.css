@@ -145,6 +145,9 @@
     .product-img {
         object-fit: contain;
         border-radius: 10px;
+        height: 400px;
+        width: 400px;
+        background-color: white;
     }
 
     .product-desc {
@@ -152,6 +155,7 @@
         padding: 10px;
         border-radius: 10px;
         background-color: #dedede;
+        color: #333;
     }
 
     .product-btn {
