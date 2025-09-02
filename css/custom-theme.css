@@ -31,6 +31,7 @@
         background-color: var(--bs-primary);
         border-color: var(--bs-primary);
     }
+
     .btn-primary:hover {
         background-color: var(--bs-tertiary);
         border-color: var(--bs-tertiary);
@@ -62,10 +63,6 @@
         margin-right: 5px;
     }
 
-    .btn.btn-nav:hover {
-        background-color: #444;
-    }
-
     .btn.btn-nav.active {
         color: var(--white);
         background-color: var(--bs-tertiary);
@@ -74,11 +71,6 @@
     .btn.btn-nav.active:hover {
         color: var(--white);
         background-color: var(--bs-tertiary);
-    }
-
-    .footer-text {
-        color: #6d4c4181;
-        transition: color 0.15s ease-in-out;
     }
 
     .footer-text:hover {
