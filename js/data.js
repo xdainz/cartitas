@@ -1,0 +1,74 @@
+const products = [
+    {
+        id: 4530,
+        name: "Double Masters 2022 Collector Booster Box",
+        brand: "Magic: The Gathering",
+        price: "325.000",
+        image: "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195124_e.png?v=-62169983925",
+    },
+    {
+        id: 1342,
+        name: "Unlimited Edition Booster Box",
+        brand: "Magic: The Gathering",
+        price: "18.500.000",
+        image: "https://dyn1.heritagestatic.com/lf?set=path%5B2%2F4%2F6%2F7%2F0%2F24670664%5D%2Csizedata%5B850x600%5D&call=url%5Bfile%3Aproduct.chain%5D",
+    },
+    {
+        id: 3325,
+        name: "Modern Horizons 2 Draft Booster Box",
+        brand: "Magic: The Gathering",
+        price: "275.000",
+        image: "https://m.media-amazon.com/images/I/81BLkCKzNiS.jpg",
+    },
+    {
+        id: 45335,
+        name: "Innistrad: Crimson Vow Set Booster Box",
+        brand: "Magic: The Gathering",
+        price: "125.000",
+        image: "https://media.wizards.com/2021/images/daily/AUkPP2VDWm-en.png",
+    },
+    {
+        id: 4325,
+        name: "Commander Legends Draft Booster Box",
+        brand: "Magic: The Gathering",
+        price: "220.000",
+        image: "https://www.asmodee.cl/wp-content/uploads/2020/11/20201007121029_6386.png",
+    },
+    {
+        id: 6765,
+        name: "Jumpstart Booster Box",
+        brand: "Magic: The Gathering",
+        price: "145.000",
+        image: "https://media.wizards.com/2022/images/daily/j22_booster_displaybox.png",
+    },
+    {
+        id: 7345,
+        name: "Zendikar Rising Collector Booster Box",
+        brand: "Magic: The Gathering",
+        price: "285.000",
+        image: "https://m.media-amazon.com/images/I/71HjzRvsQmL._UF894,1000_QL80_.jpg",
+    },
+    {
+        id: 8234,
+        name: "Time Spiral Remastered Draft Booster Box",
+        brand: "Magic: The Gathering",
+        price: "350.000",
+        image: "https://m.media-amazon.com/images/I/71aDaibndfL.jpg",
+    },
+    {
+        id: 9987,
+        name: "Kaldheim Commander Deck - Elven Empire",
+        brand: "Magic: The Gathering",
+        price: "45.000",
+        image: "https://www.oasisgames.cl/cdn/shop/products/MTGKHM_EN_Cmndr_OtrBx_02_03_1024x1024.png?v=1644438688",
+    },
+    {
+        id: 10,
+        name: "Streets of New Capenna Bundle",
+        brand: "Magic: The Gathering",
+        price: "75.000",
+        image: "https://i0.wp.com/necrotower.com/wp-content/uploads/2022/03/New-Cappena-Bundle.png?fit=801%2C801&ssl=1",
+    },
+];
+
+export { products };
