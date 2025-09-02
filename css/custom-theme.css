@@ -154,6 +154,16 @@
         background-color: #dedede;
     }
 
+    .product-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .product-price {
+        color: var(--bs-primary);
+        font-weight: bold;
+    }
+
     .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
