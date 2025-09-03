@@ -8,59 +8,18 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom-theme.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">TCG</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <div class="d-flex align-items-center mx-auto w-100">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-nav btn-ripple-water" href="#">Inicio</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link btn btn-nav btn-ripple-water" href="/productos.html" id="navbarDropdown"
-                                role="button" aria-expanded="false">Productos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><button class="dropdown-item" href="#">Magic: The Gathering</button></li>
-                                <li><button class="dropdown-item" href="#">Accesorios</button></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex mx-auto buscadormio">
-                        <span class="position-absolute top-50 start-0 translate-middle-y ps-1">🔍</span>
-                        <input class="form-control ps-5 rounded-pill" type="search"
-                            placeholder="Buscar cartas, accesorios..." aria-label="Buscar">
-                    </form>
-
-                    <div class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <button class="nav-link btn btn-nav btn-ripple-water" href="#" aria-expanded="false">
-                                <i class="bi bi-person"></i> Cuenta
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-                                <li><button class="dropdown-item" href="#">Iniciar Sesión</button></li>
-                                <li><button class="dropdown-item" href="#">Registro</button></li>
-                            </ul>
-                        </li>
-                    </div>
-                </div>
-            </div>
-    </nav>
+    <div>
+        <div id="navbar"></div>
+    </div>
 
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -73,21 +32,24 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active contenedor-carrusel-personalizado">
-                <img src="https://media.wizards.com/2022/images/daily/j22_booster_displaybox.png" class="img-fluid img-carrusel-personalizada" alt="...">
+                <img src="https://media.wizards.com/2022/images/daily/j22_booster_displaybox.png"
+                    class="img-fluid img-carrusel-personalizada" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item contenedor-carrusel-personalizado">
-                <img src="https://www.asmodee.cl/wp-content/uploads/2020/11/20201007121029_6386.png" class="d-block w-100 img-carrusel-personalizada " alt="...">
+                <img src="https://www.asmodee.cl/wp-content/uploads/2020/11/20201007121029_6386.png"
+                    class="d-block w-100 img-carrusel-personalizada " alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item contenedor-carrusel-personalizado">
-                <img src="https://m.media-amazon.com/images/I/71aDaibndfL.jpg" class="img-carrusel-personalizada " alt="...">
+                <img src="https://m.media-amazon.com/images/I/71aDaibndfL.jpg" class="img-carrusel-personalizada "
+                    alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>

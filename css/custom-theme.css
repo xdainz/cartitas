@@ -20,6 +20,7 @@
 
     body {
         font-family: var(--font);
+        padding-top: 63px;
     }
 
     .bg-tertiary {
@@ -83,14 +84,21 @@
         font-size: 1.25rem;
     }
 
-    .card-text.subtext {
+    .subtext {
         padding: 0px;
         margin-bottom: 10px;
         color: #777;
         transition: color 0.15s ease-in-out;
     }
 
-    .card-text.subtext:hover {
+    .non-hover-subtext {
+        padding: 0px;
+        margin-bottom: 10px;
+        color: #777;
+        transition: color 0.15s ease-in-out;
+    }
+
+    .subtext:hover {
         color: #0d0d0d;
     }
 
@@ -136,8 +144,35 @@
     }
 
     .product-img {
-        width: 500px;
-        height: 500px;
+        object-fit: contain;
+        border-radius: 10px;
+        height: 400px;
+        width: 400px;
+        background-color: white;
+    }
+
+    .product-desc {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #dedede;
+        color: #333;
+    }
+
+    .product-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .product-price {
+        color: var(--bs-primary);
+        font-weight: bold;
+    }
+
+    .product-name {
+        height: max-content;
+        max-height: 100px;
+        overflow: hidden;
     }
 
     .dropdown:hover .dropdown-menu {
@@ -158,7 +193,6 @@
 
     .dropdown-item:hover {
         background-color: #444;
-        border-radius: 8px;
     }
 
     .buscadormio {
@@ -211,10 +245,6 @@
         transform: translate(-50%, -50%) scale(6);
         /* expansión más grande */
         opacity: 0;
-    }
-
-    .dropdown-item:hover {
-        background-color: #0d0d0d18;
     }
 
     .bi-person {

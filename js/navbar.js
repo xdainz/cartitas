@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+function renderNavbar() {
+    const navContainer = document.getElementById("navbar"); // div id where cards will render
+    navContainer.innerHTML = "";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic item viewer</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom-theme.css" rel="stylesheet">
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <script src="js/itemPage.js" type="module"></script>
-</head>
+    const navbar = document.createElement("nav");
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+    navbar.className = "navbar navbar-expand-lg navbar-dark bg-dark fixed-top";
+
+    navbar.innerHTML = `
+   <div class="container">
             <a class="navbar-brand" href="index.html">TCG</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +15,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="d-flex align-items-center mx-auto w-100">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ">
                         <li class="nav-item">
                             <a class="nav-link btn btn-nav btn-ripple-water" href="index.html">Inicio</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link btn btn-nav btn-ripple-water" href="productos.html" id="navbarDropdown"
+                            <a class="nav-link btn btn-nav btn-ripple-water" href="/productos.html" id="navbarDropdown"
                                 role="button" aria-expanded="false">Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -48,7 +38,8 @@
 
                     <div class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <button class="nav-link btn btn-nav btn-ripple-water" href="#" aria-expanded="false">Perfil
+                            <button class="nav-link btn btn-nav btn-ripple-water" href="#" aria-expanded="false">
+                                <i class="bi bi-person"></i> Cuenta
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
                                 <li><button class="dropdown-item" href="#">Iniciar Sesión</button></li>
@@ -58,9 +49,13 @@
                     </div>
                 </div>
             </div>
-    </nav>
-    <div id="product-page"></div>
+    `;
 
-</body>
+    navContainer.appendChild(navbar);
+}
 
-</html>
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderNavbar);
+} else {
+    renderNavbar();
+}

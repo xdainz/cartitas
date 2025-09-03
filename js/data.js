@@ -5,6 +5,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "325.000",
         image: "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195124_e.png?v=-62169983925",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 1342,
@@ -12,6 +13,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "18.500.000",
         image: "https://dyn1.heritagestatic.com/lf?set=path%5B2%2F4%2F6%2F7%2F0%2F24670664%5D%2Csizedata%5B850x600%5D&call=url%5Bfile%3Aproduct.chain%5D",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 3325,
@@ -19,6 +21,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "275.000",
         image: "https://m.media-amazon.com/images/I/81BLkCKzNiS.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 45335,
@@ -26,6 +29,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "125.000",
         image: "https://media.wizards.com/2021/images/daily/AUkPP2VDWm-en.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 4325,
@@ -33,6 +37,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "220.000",
         image: "https://www.asmodee.cl/wp-content/uploads/2020/11/20201007121029_6386.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 6765,
@@ -40,6 +45,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "145.000",
         image: "https://media.wizards.com/2022/images/daily/j22_booster_displaybox.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 7345,
@@ -47,6 +53,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "285.000",
         image: "https://m.media-amazon.com/images/I/71HjzRvsQmL._UF894,1000_QL80_.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 8234,
@@ -54,6 +61,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "350.000",
         image: "https://m.media-amazon.com/images/I/71aDaibndfL.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 9987,
@@ -61,6 +69,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "45.000",
         image: "https://www.oasisgames.cl/cdn/shop/products/MTGKHM_EN_Cmndr_OtrBx_02_03_1024x1024.png?v=1644438688",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
     {
         id: 10,
@@ -68,6 +77,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "75.000",
         image: "https://i0.wp.com/necrotower.com/wp-content/uploads/2022/03/New-Cappena-Bundle.png?fit=801%2C801&ssl=1",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
     },
 ];
 
