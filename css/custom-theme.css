@@ -256,4 +256,27 @@
         background: linear-gradient(90deg, #1f1f1f, #343a40);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
+
+    .img-carrusel-personalizada {
+        width: 100%;
+        /* O un valor en píxeles, ej: 300px */
+        height: 300px;
+        /* Define una altura fija */
+        object-fit: contain;
+        /* Ajusta la imagen para cubrir el espacio sin distorsionarse */
+        object-position: center;
+        /* Centra la imagen */
+        background-color: #222;
+        border-radius: 20px;
+        margin: 15px;
+    }
+
+    /* Para controlar el tamaño del contenedor */
+    .contenedor-carrusel-personalizado {
+        width: 98%;
+        /* O un valor fijo como 300px */
+        max-height: 500px;
+        /* Limita la altura para que no sea excesiva */
+        /* Oculta las partes de la imagen que no caben */
+    }
 }
