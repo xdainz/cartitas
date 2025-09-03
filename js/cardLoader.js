@@ -1,9 +1,5 @@
 import { products } from "./data.js";
 
-function init() {
-    renderCards(products);
-}
-
 function createCard(product) {
     const card = document.createElement("div");
 
@@ -13,7 +9,7 @@ function createCard(product) {
     card.innerHTML = `
     
         <div class="card shadow">
-        <a class="card-link" href="item/${product.id}">
+        <a class="card-link" href="product.html?id=${product.id}">
                 <img class="card-img-top" src="${product.image}" alt="${product.name} image"></img>
                 <div class="card-body">
                     <h4 class="card-title">${product.name}</h4>
