@@ -5,7 +5,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "325.000",
         image: "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195124_e.png?v=-62169983925",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "Sumérgete en el lujo definitivo con esta caja de booster coleccionista. Incluye reimpresiones de cartas icónicas, versiones extendidas, bordes alternativos y foil de alta calidad. Perfecto para coleccionistas que buscan las joyas más raras y espectaculares de Magic.",
     },
     {
         id: 1342,
@@ -13,7 +13,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "18.500.000",
         image: "https://dyn1.heritagestatic.com/lf?set=path%5B2%2F4%2F6%2F7%2F0%2F24670664%5D%2Csizedata%5B850x600%5D&call=url%5Bfile%3Aproduct.chain%5D",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "Una pieza de historia de Magic. La Unlimited Edition marcó la primera reimpresión del juego original, con bordes blancos y arte mejorado. Contiene las cartas fundacionales que definieron el juego. Una inversión invaluable para coleccionistas serios.",
     },
     {
         id: 3325,
@@ -21,7 +21,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "275.000",
         image: "https://m.media-amazon.com/images/I/81BLkCKzNiS.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "Diseñado específicamente para el formato Modern, este set introduce cartas nuevas y poderosas directamente a este formato competitivo. Ideal para jugadores que buscan innovar y dominar el meta con estrategias frescas y mecánicas revolucionarias.",
     },
     {
         id: 45335,
@@ -29,7 +29,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "125.000",
         image: "https://media.wizards.com/2021/images/daily/AUkPP2VDWm-en.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "Asiste a la boda monstruosa del siglo en el gótico mundo de Innistrad. Este set booster está optimizado para abrir, con una experiencia enfocada en la narración y la colección. Enfréntate a vampiros, licántropos y espíritus mientras desentrañas su macabra historia.",
     },
     {
         id: 4325,
@@ -37,7 +37,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "220.000",
         image: "https://www.asmodee.cl/wp-content/uploads/2020/11/20201007121029_6386.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "El primer set diseñado para ser draftado en el formato Commander. Construye mazos de 60 cartas para partidas multijugador épicas al momento de abrir. Incluye nuevos comandantes legendarios y reimpresiones cruciales para el formato más social de Magic.",
     },
     {
         id: 6765,
@@ -45,7 +45,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "145.000",
         image: "https://media.wizards.com/2022/images/daily/j22_booster_displaybox.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "¡Magic listo para jugar en minutos! Cada booster es un mazo temático de 20 cartas. Combina dos boosters para crear un mazo de 40 cartas y juega al instante. Perfecto para jugadores nuevos y veteranos que buscan partidas rápidas y llenas de diversión.",
     },
     {
         id: 7345,
@@ -53,15 +53,15 @@ const products = [
         brand: "Magic: The Gathering",
         price: "285.000",
         image: "https://m.media-amazon.com/images/I/71HjzRvsQmL._UF894,1000_QL80_.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "Captura la esencia de aventura y peligro de Zendikar. Estos boosters coleccionistas están repletos de treatment especiales: cartas con bordes extendidos, versiones foil de las tierras duales de MDFC, y arte espectacular que celebra el mundo de las tierras salvajes.",
     },
     {
         id: 8234,
         name: "Time Spiral Remastered Draft Booster Box",
         brand: "Magic: The Gathering",
-        price: "350.000",
         image: "https://m.media-amazon.com/images/I/71aDaibndfL.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        price: "350.000",
+        desc: "Un viaje nostálgico a través de la historia de Magic. Este set remasterizado combina las cartas más memorables de la block de Time Spiral con el moderno tratamiento 'Timeshifted' en un frame de época. Un festín para los amantes de la historia del juego.",
     },
     {
         id: 9987,
@@ -69,7 +69,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "45.000",
         image: "https://www.oasisgames.cl/cdn/shop/products/MTGKHM_EN_Cmndr_OtrBx_02_03_1024x1024.png?v=1644438688",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "Comanda un imperio de elfos en el mundo nórdico de Kaldheim. Este mazo preconstruido de Commander, liderado por Lathril, Blade of the Elves, se centra en generar una gran cantidad de fichas de Elfos y drenar la vida de tus oponentes. Estrategia tribal lista para jugar.",
     },
     {
         id: 10,
@@ -77,8 +77,7 @@ const products = [
         brand: "Magic: The Gathering",
         price: "75.000",
         image: "https://i0.wp.com/necrotower.com/wp-content/uploads/2022/03/New-Cappena-Bundle.png?fit=801%2C801&ssl=1",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed officia et, corporis placeat delectus atque! Quisquam amet aliquam pariatur molestiae unde consectetur nam aut eaque a eius, numquam repellat.",
+        desc: "Adéntrate en la ciudad urbana y art déco gobernada por familias mafiosas. Este bundle incluye 8 boosters Set, una carta foil promocional, 40 tierras básicas, un dado de vida y una guía. Todo lo necesario para experimentar el glamour y el crimen de New Capenna.",
     },
 ];
-
 export { products };

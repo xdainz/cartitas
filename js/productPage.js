@@ -1,11 +1,15 @@
 import { products } from "./data.js";
 
-function init() {
-    renderPage();
+function getProductById() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
+
+    return products.find((product) => product.id == id);
 }
 
 function createPage(product) {
     const page = document.createElement("div");
+    document.title = product.name;
 
     page.className = "container";
 
@@ -34,9 +38,13 @@ function createPage(product) {
 
 function renderPage() {
     const container = document.getElementById("product-page");
-    const productPage = createPage(products[1]);
+    const productPage = createPage(getProductById());
 
     container.appendChild(productPage);
 }
 
-window.onload = init;
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderPage());
+} else {
+    renderPage();
+}

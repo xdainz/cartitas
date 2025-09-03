@@ -21,7 +21,7 @@ function renderNavbar() {
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link btn btn-nav btn-ripple-water" href="/productos.html" id="navbarDropdown"
+                            <a class="nav-link btn btn-nav btn-ripple-water" href="/products.html" id="navbarDropdown"
                                 role="button" aria-expanded="false">Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
