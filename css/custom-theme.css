@@ -11,8 +11,8 @@
     --bs-info-rgb: 179, 229, 252;
     --bs-warning: #ffccbc;
     --bs-warning-rgb: 255, 204, 188;
-    --bs-danger: #ffccbc;
-    --bs-danger-rgb: 255, 204, 188;
+    --bs-danger: #f33a3a;
+    --bs-danger-rgb: 243, 58, 58;
     --bs-dark: #222;
     --bs-dark-rgb: 34, 34, 34;
     --white: #f2f2f2;
@@ -25,6 +25,10 @@
 
     .bg-tertiary {
         background-color: var(--bs-tertiary);
+    }
+
+    .text-tertiary {
+        color: var(--bs-tertiary);
     }
 
     .btn-primary {
@@ -117,7 +121,7 @@
         object-fit: contain;
     }
 
-    .card {
+    .product-card {
         background-color: #e7e7e7;
         width: 300px;
         height: 500px;
@@ -278,5 +282,21 @@
         max-height: 500px;
         /* Limita la altura para que no sea excesiva */
         /* Oculta las partes de la imagen que no caben */
+    }
+
+    .form-control {
+        background-color: white;
+    }
+
+    .form-select {
+        background-color: white;
+    }
+
+    .form-check-input {
+        --bs-form-check-bg: white;
+    }
+
+    .checkout.list-group-item {
+        background-color: #ffffff80;
     }
 }
