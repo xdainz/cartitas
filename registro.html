@@ -26,23 +26,22 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card p-4 shadow">
                     <form>
-                        <h3 class="text-center mb-4">Registro</h3>
+                        <h3 class="text-center mb-5">Registro</h3>
 
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="password"
-                                placeholder="Ingresa tu contraseña">
+                                placeholder="Ingresa tu contraseña" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="rpassword" class="form-label">Repetir Contraseña</label>
-                            <input type="password" class="form-control" id="rpassword"
-                                placeholder="Reingresa tu contraseña">
+                            <label for="rpassword" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" id="rpassword" placeholder="Reingresa tu contraseña" required>
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100">Enviar</button>
@@ -51,7 +50,7 @@
             </div>
         </div>
     </div>
-
+    <script class="js/session.js"></script>
 </body>
 
 </html>
