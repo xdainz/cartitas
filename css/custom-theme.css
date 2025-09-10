@@ -299,4 +299,14 @@
     .checkout.list-group-item {
         background-color: #ffffff80;
     }
+
+    .footer-link {
+        text-decoration: none;
+        color: #999;
+        transition: color 0.15s ease-in-out;
+    }
+    
+    .footer-link:hover{
+        color: white;
+    }
 }
