@@ -42,7 +42,7 @@ function renderNavbar() {
                                 <i class="bi bi-person"></i> Cuenta
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-                                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="inicioSession.html">Iniciar Sesión</a></li>
                                 <li><a class="dropdown-item" href="registro.html">Registro</a></li>
                             </ul>
                         </li>
