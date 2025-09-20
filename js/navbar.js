@@ -26,7 +26,7 @@ function renderNavbar() {
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="/products.html">Magic: The Gathering</a></li>
-                                <li><button class="dropdown-item" href="#">Accesorios</button></li>
+                                <li><a class="dropdown-item" href="/index.html">Accesorios</a></li>
                             </ul>
                         </li>
                     </ul>
