@@ -21,12 +21,12 @@ function renderNavbar() {
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link btn btn-nav btn-ripple-water" href="/products.html" id="navbarDropdown"
+                            <a class="nav-link btn btn-nav btn-ripple-water" id="navbarDropdown"
                                 role="button" aria-expanded="false">Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><button class="dropdown-item" href="#">Magic: The Gathering</button></li>
-                                <li><button class="dropdown-item" href="#">Accesorios</button></li>
+                                <li><a class="dropdown-item" href="/products.html">Magic: The Gathering</a></li>
+                                <li><a class="dropdown-item" href="/index.html">Accesorios</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -42,8 +42,8 @@ function renderNavbar() {
                                 <i class="bi bi-person"></i> Cuenta
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-                                <li><button class="dropdown-item" href="#">Iniciar Sesión</button></li>
-                                <li><button class="dropdown-item" href="#">Registro</button></li>
+                                <li><a class="dropdown-item" href="inicioSession.html">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="registro.html">Registro</a></li>
                             </ul>
                         </li>
                     </div>
