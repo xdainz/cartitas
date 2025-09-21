@@ -284,6 +284,29 @@
         /* Oculta las partes de la imagen que no caben */
     }
 
+    .form-control {
+        background-color: white;
+    }
 
+    .form-select {
+        background-color: white;
+    }
 
+    .form-check-input {
+        --bs-form-check-bg: white;
+    }
+
+    .checkout.list-group-item {
+        background-color: #ffffff80;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: #999;
+        transition: color 0.15s ease-in-out;
+    }
+    
+    .footer-link:hover{
+        color: white;
+    }
 }
