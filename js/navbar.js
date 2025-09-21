@@ -30,10 +30,10 @@ function renderNavbar() {
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex mx-auto buscadormio">
-                        <span class="position-absolute top-50 start-0 translate-middle-y ps-1">🔍</span>
+                    <form class="d-flex position-relative mx-auto w-lg-auto my-2 my-lg-0">
+                        <span class="position-absolute top-50 start-0 translate-middle-y ps-3">🔍</span>
                         <input class="form-control ps-5 rounded-pill" type="search"
-                            placeholder="Buscar cartas, accesorios..." aria-label="Buscar">
+                        placeholder="Buscar..." aria-label="Buscar">
                     </form>
 
                     <div class="navbar-nav">
