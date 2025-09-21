@@ -11,8 +11,8 @@
     --bs-info-rgb: 179, 229, 252;
     --bs-warning: #ffccbc;
     --bs-warning-rgb: 255, 204, 188;
-    --bs-danger: #ffccbc;
-    --bs-danger-rgb: 255, 204, 188;
+    --bs-danger: #f33a3a;
+    --bs-danger-rgb: 243, 58, 58;
     --bs-dark: #222;
     --bs-dark-rgb: 34, 34, 34;
     --white: #f2f2f2;
@@ -25,6 +25,10 @@
 
     .bg-tertiary {
         background-color: var(--bs-tertiary);
+    }
+
+    .text-tertiary {
+        color: var(--bs-tertiary);
     }
 
     .btn-primary {
@@ -111,16 +115,14 @@
 
     .card-img-top {
         padding: 10px 10px 0px 10px;
-        width: 300px;
-        height: 300px;
         background-color: white;
         object-fit: contain;
+        height: 250px;
+        width: 100%;
     }
 
-    .card {
+    .product-card {
         background-color: #e7e7e7;
-        width: 300px;
-        height: 500px;
         margin: 5px;
         text-align: center;
         border: none;
@@ -129,6 +131,8 @@
     .card-body {
         padding-bottom: 70px;
         box-sizing: border-box;
+        height: 250px;
+        width: 100%;
     }
 
     .btn.add-to-cart {

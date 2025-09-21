@@ -3,15 +3,16 @@ import { products } from "./data.js";
 function createCard(product) {
     const card = document.createElement("div");
 
-    card.className = "col-sm-4 col-md-4 col-lg-3";
+    card.className = "p-1";
     card.dataset.id = product.id;
 
     card.innerHTML = `
+<div class="col">
     
         <div class="card shadow">
         <a class="card-link" href="product.html?id=${product.id}">
                 <img class="card-img-top" src="${product.image}" alt="${product.name} image"></img>
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h4 class="card-title">${product.name}</h4>
                     <p class="card-text subtext">${product.brand}</p>
                     <p class="card-text price">$${product.price}</p>
@@ -21,6 +22,7 @@ function createCard(product) {
                 </div>
                 </a>
         <div>
+</div>
     `;
 
     return card;

@@ -9,6 +9,7 @@
     <link href="css/custom-theme.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/cardLoader.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +23,13 @@
         <div id="navbar"></div>
     </div>
 
-    <div class="container">
-        <div class="row" id="productsContainer"></div>
+    <div class="row pt-3 container">
+            <div class="col-sm-12 col-md-4">filtered search</div>
+        <div class="col-sm-12 col-md-8 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="productsContainer"></div>
     </div>
+
+   
+    <div id="footer"></div>
 </body>
 
 </html>
