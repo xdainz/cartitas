@@ -17,6 +17,7 @@
     --bs-dark-rgb: 34, 34, 34;
     --white: #f2f2f2;
     --font: "Noto Sans", sans-serif;
+    --admin-sidebar-width: 200px;
 
     body {
         font-family: var(--font);
@@ -309,4 +310,53 @@
     .footer-link:hover{
         color: white;
     }
+}
+
+.admin-sidebar {
+    width: var(--admin-sidebar-width);
+    height: 100vh;
+    background-color: var(--bs-dark);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.admin-sidebar h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.admin-sidebar .nav-link {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.admin-sidebar .nav-link:hover {
+    color: var(--bs-tertiary);
+}
+
+.admin-content {
+    margin-left: var(--admin-sidebar-width);
+    padding: 1rem;
+}
+
+.admin-navbar {
+    background-color: var(--bs-tertiary);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.admin-card {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.admin-card h6, .admin-card h4 {
+    margin: 0;
+}
+
+.admin-btn {
+    margin-top: 0.5rem;
 }

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loginMessage.textContent = "Inicio de sesión exitoso, redirigiendo...";
 
             setTimeout(() => {
-                window.location.href = "index.html"; // esto redirigira al inicio
+                window.location.href = "adminplant.html"; // esto redirigira al inicio
             }, 1500);
         //login incorrecto
         } else {
