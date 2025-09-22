@@ -8,7 +8,7 @@ function renderNavbar() {
 
     navbar.innerHTML = `
    <div class="container">
-            <a class="navbar-brand" href="index.html">TCG</a>
+            <a class="navbar-brand" href="index.html">LevelUp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -16,10 +16,6 @@ function renderNavbar() {
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="d-flex align-items-center mx-auto w-100">
                     <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-nav btn-ripple-water" href="index.html">Inicio</a>
-                        </li>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link btn btn-nav btn-ripple-water" href="/products.html" id="navbarDropdown"
                                 role="button" aria-expanded="false">Productos
@@ -45,6 +41,11 @@ function renderNavbar() {
                                 <li><a class="dropdown-item" href="inicioSession.html">Iniciar Sesión</a></li>
                                 <li><a class="dropdown-item" href="registro.html">Registro</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link btn btn-nav btn-ripple-water" href="checkout.html" aria-expanded="false">
+                                🛒 Carrito
+                            </a>
                         </li>
                     </div>
                 </div>

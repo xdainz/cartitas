@@ -7,7 +7,7 @@ function renderFooter() {
     navbar.className = "mt-3 pb-3 pt-3 bg-dark text-light text-center text-small";
 
     navbar.innerHTML = `
-    <p class="mb-1">&copy; 2025 Cartitas</p>
+    <p class="mb-1">&copy; 2025 LevelUp</p>
     <ul class="list-inline">
         <li class="list-inline-item"><a href="#" class="footer-link">Instagram</a></li>
         <li class="list-inline-item"><a href="#" class="footer-link">Twitter</a></li>
