@@ -23,6 +23,10 @@
         padding-top: 63px;
     }
 
+    .text-hidden{
+        color: var(--bs-body-bg);
+    }
+
     .bg-tertiary {
         background-color: var(--bs-tertiary);
     }
