@@ -21,7 +21,7 @@
 
     body {
         font-family: var(--font);
-        padding-top: 63px;
+        padding-top: 67px;
     }
 
     .text-hidden {
@@ -301,6 +301,11 @@
 
     .checkout.list-group-item {
         background-color: #ffffff80;
+    }
+
+    .footer {
+        width: 100%;
+        max-width: none !important;
     }
 
     .footer-link {
