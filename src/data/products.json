@@ -1,0 +1,56 @@
+[
+    {
+        "id": "4531",
+        "name": "Commander Legends: Battle for Baldur's Gate Collector Booster Box",
+        "brand": "Magic: The Gathering",
+        "price": "185.000",
+        "image": "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195125_e.png?v=-62169983925",
+        "desc": "Embárcate en una aventura de Dungeons & Dragons con esta caja de booster coleccionista. Contiene cartas con tratamiento especial, foils espectaculares y criaturas legendarias únicas del universo de Faerûn.",
+        "category": "TCG"
+    },
+    {
+        "id": "4532",
+        "name": "Modern Horizons 2 Draft Booster Box",
+        "brand": "Magic: The Gathering",
+        "price": "275.000",
+        "image": "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195126_e.png?v=-62169983925",
+        "desc": "Revoluciona el formato Modern con esta caja de booster draft. Incluye mecánicas innovadoras, reimpresiones muy solicitadas y poderosas cartas nuevas diseñadas específicamente para jugadores competitivos.",
+        "category": "TCG"
+    },
+    {
+        "id": "4533",
+        "name": "Kamigawa: Neon Dynasty Set Booster Box",
+        "brand": "Magic: The Gathering",
+        "price": "145.000",
+        "image": "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195127_e.png?v=-62169983925",
+        "desc": "Experimenta la fusión única de tradición y tecnología futurista en Kamigawa. Esta caja de set boosters ofrece una experiencia de apertura optimizada con arte inspirador y cartas de alta rareza.",
+        "category": "TCG"
+    },
+    {
+        "id": "4534",
+        "name": "Unfinity Collector Booster Box",
+        "brand": "Magic: The Gathering",
+        "price": "165.000",
+        "image": "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195128_e.png?v=-62169983925",
+        "desc": "Diviértete en el espacio con esta caja de booster coleccionista llena de locura cósmica. Incluye cartas acuarela, foils galácticos y tratamientos especiales únicos en el universo de Magic.",
+        "category": "TCG"
+    },
+    {
+        "id": "4535",
+        "name": "Dominaria United Draft Booster Box",
+        "brand": "Magic: The Gathering",
+        "price": "135.000",
+        "image": "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195129_e.png?v=-62169983925",
+        "desc": "Regresa al plano natal de Magic con esta caja de booster draft. Descubre la rica historia de Dominaria, poderosos hechizos legendarios y mecánicas clásicas renovadas para el juego moderno.",
+        "category": "TCG"
+    },
+    {
+        "id": "4536",
+        "name": "The Brothers' War Collector Booster Box",
+        "brand": "Magic: The Gathering",
+        "price": "195.000",
+        "image": "https://cdn.chaoscards.co.uk/uploads/prod_img/2_195130_e.png?v=-62169983925",
+        "desc": "Revive la guerra épica entre Urza y Mishra con esta caja de booster coleccionista. Contiene cartas con arte schematic, bordes retro, foils prístinos y piezas de colección únicas de esta guerra legendaria.",
+        "category": "TCG"
+    }
+]
