@@ -1,9 +1,24 @@
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ProductPage from "./pages/ProductPage";
+import Layout from "./layout/Layout";
 
 function App() {
     return (
         <>
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/products" element={<Products />} />
             <p>Hola Mundo</p>
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
+                </Routes>
+            </Layout>
         </>
     );
 }
