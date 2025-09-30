@@ -97,18 +97,6 @@
         padding: 0px;
         margin-bottom: 10px;
         color: #777;
-        transition: color 0.15s ease-in-out;
-    }
-
-    .non-hover-subtext {
-        padding: 0px;
-        margin-bottom: 10px;
-        color: #777;
-        transition: color 0.15s ease-in-out;
-    }
-
-    .subtext:hover {
-        color: #0d0d0d;
     }
 
     .card-text.price {
@@ -127,8 +115,14 @@
     }
 
     .product-card {
-        background-color: #e7e7e7;
+        background-color: #d4d4d4;
         text-align: center;
+        border: none;
+        transition: background-color 0.15s ease-in-out;
+    }
+
+    .product-card:hover {
+        background-color: #e9e9e9;
     }
 
     .card-body {
@@ -153,8 +147,8 @@
     .product-img {
         object-fit: contain;
         border-radius: 10px;
-        height: 45vh;
-        width: 45vh;
+        width: 100%;
+        aspect-ratio: 1/1;
         background-color: white;
     }
 
