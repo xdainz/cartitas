@@ -12,8 +12,9 @@ function ProductPage() {
 
     return (
         <>
-            <div className="container">
-                <div className="row pt-3">
+            <div className="container pt-0">
+                <h1>{product.name}</h1>
+                <div className="row">
                     <div className="col-lg-4">
                         <img
                             className="product-img shadow"
@@ -22,8 +23,7 @@ function ProductPage() {
                         ></img>
                     </div>
 
-                    <div className="col-lg-8 pt-3">
-                        <h1 className="product-name">{product.name}</h1>
+                    <div className="col-lg-8">
                         <p className="non-hover-subtext">{product.brand}</p>
                         <h4 className="product-price">
                             <b>${product.price}</b>

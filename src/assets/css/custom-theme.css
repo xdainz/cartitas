@@ -153,8 +153,8 @@
     .product-img {
         object-fit: contain;
         border-radius: 10px;
-        height: 400px;
-        width: 400px;
+        height: 45vh;
+        width: 45vh;
         background-color: white;
     }
 
