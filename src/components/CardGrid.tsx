@@ -1,12 +1,10 @@
 import Card from "./Card";
-import JsonProducts from "../hooks/JsonProduct";
+import type { Product } from "../types/Product";
 
-const productList = JsonProducts;
-
-function CardGrid() {
+function CardGrid({ products }: { products: Product[] }) {
     return (
         <>
-            {productList.map((product) => (
+            {products.map((product, index) => (
                 <Card
                     id={product.id}
                     category={product.category}
@@ -15,6 +13,7 @@ function CardGrid() {
                     price={product.price}
                     image={product.image}
                     desc={product.desc}
+                    key={index}
                 />
             ))}
         </>

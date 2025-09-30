@@ -26,15 +26,9 @@ function Navbar() {
                         <div className="d-flex align-items-center mx-auto w-100">
                             <ul className="navbar-nav ">
                                 <li className="nav-item dropdown">
-                                    <Link
-                                        className="nav-link btn btn-nav btn-ripple-water"
-                                        to="/products"
-                                        id="navbarDropdown"
-                                        role="button"
-                                        aria-expanded="false"
-                                    >
+                                    <a className="nav-link btn btn-nav btn-ripple-water">
                                         Productos
-                                    </Link>
+                                    </a>
                                     <ul
                                         className="dropdown-menu"
                                         aria-labelledby="navbarDropdown"
@@ -42,9 +36,9 @@ function Navbar() {
                                         <li>
                                             <Link
                                                 className="dropdown-item"
-                                                to="/products"
+                                                to="/products/TCG"
                                             >
-                                                Magic: The Gathering
+                                                Trading Card Games
                                             </Link>
                                         </li>
                                         <li>
