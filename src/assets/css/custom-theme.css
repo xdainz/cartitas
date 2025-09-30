@@ -19,6 +19,17 @@
     --font: "Noto Sans", sans-serif;
     --admin-sidebar-width: 200px;
 
+    /* For Chrome, Safari, and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* For Internet Explorer and Edge */
+    -ms-overflow-style: none;
+
+    /* For Firefox */
+    scrollbar-width: none;
+
     body {
         font-family: var(--font);
         padding-top: 67px;
