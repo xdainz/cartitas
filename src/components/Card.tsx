@@ -6,7 +6,7 @@ function Card(product: Product) {
         <>
             <div className="p-1">
                 <div className="col">
-                    <div className="card shadow">
+                    <div className="card product-card shadow">
                         <Link
                             className="card-link"
                             to={"/" + product.category + "/" + product.id}
