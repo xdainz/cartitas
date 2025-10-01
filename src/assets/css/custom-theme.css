@@ -267,6 +267,7 @@
     .navbar {
         background: linear-gradient(90deg, #1f1f1f, #343a40);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        list-style-type: none;
     }
 
     .img-carrusel-personalizada {
