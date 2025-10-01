@@ -26,9 +26,12 @@ function Navbar() {
                         <div className="d-flex align-items-center mx-auto w-100">
                             <ul className="navbar-nav ">
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link btn btn-nav btn-ripple-water">
+                                    <Link
+                                        className="nav-link btn btn-nav btn-ripple-water"
+                                        to="/Productos"
+                                    >
                                         Productos
-                                    </a>
+                                    </Link>
                                     <ul
                                         className="dropdown-menu"
                                         aria-labelledby="navbarDropdown"
@@ -36,7 +39,7 @@ function Navbar() {
                                         <li>
                                             <Link
                                                 className="dropdown-item"
-                                                to="/TCG"
+                                                to="/Productos/TCG"
                                             >
                                                 Trading Card Games
                                             </Link>
