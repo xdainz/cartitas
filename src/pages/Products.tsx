@@ -1,42 +1,57 @@
 import { useParams } from "react-router";
 import CardGrid from "../components/CardGrid";
 import JsonProducts from "../hooks/JsonProduct";
-import type { Product } from "../types/Product";
 import NotFound from "./404";
+import { useEffect, useState, useMemo } from "react";
 
 function Products() {
     const { category } = useParams();
+    const [searchTerm, setSearchTerm] = useState("");
 
-    // filtrar solo productos con la "categoria" q corresponda a www.paginaweb.com/products/{categoria}
-    // esto al implementar la api deberia solamente hacer un GET de los productos con esa categoria
-    const productList: Product[] = JsonProducts.filter(
-        (prod) => prod.category === category
-    );
+    // usa useMemo para updatear la lista solo cuando cambia su contenido
+    const categorizedProducts = useMemo(() => {
+        return category
+            ? JsonProducts.filter((prod) => prod.category === category)
+            : JsonProducts;
+    }, [category]);
 
-    let title = "placeholder";
-    let products: Product[];
+    const [displayedProducts, setDisplayedProducts] =
+        useState(categorizedProducts);
 
-    if (!category) {
-        // si no hay categoria, mostrar todos
-        title = "Productos";
-        products = JsonProducts;
-    } else {
-        title = category;
-        products = productList;
+    const title = category ? category : "Productos";
 
-        if (products.length < 1) {
-            return <NotFound />;
-        }
+    const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchTerm(event.target.value);
+    };
+
+    useEffect(() => {
+        const results = categorizedProducts.filter((product) =>
+            product.name?.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setDisplayedProducts(results);
+    }, [searchTerm, categorizedProducts]);
+
+    // si no hay categoria manda a 404
+    if (category && categorizedProducts.length < 1) {
+        return <NotFound />;
     }
+
     return (
         <div className="container">
             <h1 className="text-center">{title}</h1>
             <div className="row">
                 <div className="col-sm-12 col-md-4">
-                    aca va la busqueda avanzada
+                    <div className="card shadow border-0 p-3">
+                        <h4>Busqueda Avanzada</h4>
+                        <input
+                            type="text"
+                            placeholder="Buscar..."
+                            onChange={handleSearchChange}
+                        />
+                    </div>
                 </div>
                 <div className="col-sm-12 col-md-8 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-                    <CardGrid products={products} />
+                    <CardGrid products={displayedProducts} />
                 </div>
             </div>
         </div>
