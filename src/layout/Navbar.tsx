@@ -52,19 +52,6 @@ function Navbar() {
                                     </ul>
                                 </li>
                             </ul>
-                            <form className="d-flex position-relative mx-auto w-lg-auto my-2 my-lg-0">
-                                <span className="position-absolute top-50 start-0 translate-middle-y ps-3">
-                                    🔍
-                                </span>
-                                <input
-                                    className="form-control ps-5 rounded-pill"
-                                    type="search"
-                                    placeholder="Buscar..."
-                                    aria-label="Buscar"
-                                ></input>
-                            </form>
-
-                            <div className="navbar-nav"></div>
                             <li className="nav-item dropdown">
                                 <button
                                     className="nav-link btn btn-nav btn-ripple-water"
