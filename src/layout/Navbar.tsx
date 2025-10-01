@@ -36,7 +36,7 @@ function Navbar() {
                                         <li>
                                             <Link
                                                 className="dropdown-item"
-                                                to="/products/TCG"
+                                                to="/TCG"
                                             >
                                                 Trading Card Games
                                             </Link>

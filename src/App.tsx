@@ -13,7 +13,7 @@ function App() {
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/products/:category" element={<Products />} />
+                    <Route path="/:category" element={<Products />} />
                     <Route path="/:category/:id" element={<ProductPage />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
