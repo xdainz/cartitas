@@ -4,7 +4,7 @@ import productApi from "../data/products.json";
 const JsonProducts: Product[] = productApi.map((product: Product) => ({
     id: product.id,
     category: product.category || "null",
-    name: product.name,
+    name: product.name || "null",
     brand: product.brand,
     price: product.price,
     image: product.image || "null",

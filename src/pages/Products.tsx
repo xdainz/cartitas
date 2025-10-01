@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import CardGrid from "../components/CardGrid";
 import JsonProducts from "../hooks/JsonProduct";
 import type { Product } from "../types/Product";
+import NotFound from "./404";
 
 function Products() {
     const { category } = useParams();
@@ -12,16 +13,11 @@ function Products() {
         (prod) => prod.category === category
     );
 
-    if (productlist.length === 0)
-        return (
-            <div className="container">
-                <h1>No se han encontrado productos para esta categoria</h1>
-            </div>
-        );
+    if (productlist.length === 0) return <NotFound />;
 
     return (
         <div className="container">
-            <h1 className="align-start">{category}</h1>
+            <h1 className="text-center">{category}</h1>
             <div className="row">
                 <div className="col-sm-12 col-md-4">
                     aca va la busqueda avanzada

@@ -32,7 +32,7 @@
 
     body {
         font-family: var(--font);
-        padding-top: 67px;
+        padding-top: 5rem;
     }
 
     .text-hidden {

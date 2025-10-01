@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import JsonProducts from "../hooks/JsonProduct";
+import NotFound from "./404";
 
 function ProductPage() {
     const { category, id } = useParams();
@@ -8,11 +9,11 @@ function ProductPage() {
         (prod) => prod.category === category && prod.id === id
     );
 
-    if (!product) return <div>404 Product Not Found</div>;
+    if (!product) return <NotFound />;
 
     return (
         <>
-            <div className="container pt-5">
+            <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <img

@@ -1,7 +1,10 @@
+import Carousel from "../components/Carousel";
+
 function Home() {
+    document.title = "Home";
     return (
         <div className="container">
-            <p>home</p>
+            <Carousel />
         </div>
     );
 }

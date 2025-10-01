@@ -95,13 +95,13 @@ function Navbar() {
                                 </ul>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     className="nav-link btn btn-nav btn-ripple-water"
-                                    href="checkout.html"
+                                    to="/checkout"
                                     aria-expanded="false"
                                 >
                                     🛒 Carrito
-                                </a>
+                                </Link>
                             </li>
                         </div>
                     </div>
