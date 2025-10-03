@@ -1,8 +1,8 @@
 import { useParams } from "react-router";
 import CardGrid from "../components/CardGrid";
 import JsonProducts from "../hooks/JsonProduct";
-import NotFound from "./404";
 import { useEffect, useState, useMemo } from "react";
+import SearchBox from "../components/SearchBox";
 
 function Products() {
     const { category } = useParams();
@@ -31,9 +31,24 @@ function Products() {
         setDisplayedProducts(results);
     }, [searchTerm, categorizedProducts]);
 
-    // si no hay categoria manda a 404
-    if (category && categorizedProducts.length < 1) {
-        return <NotFound />;
+    // si la categoria ingresada no existe manda a 404
+    let isAccesorio = false;
+    let isJuegoMesa = false;
+
+    // checkea la categoria para ver q campos mostrar en el componente de busqueda
+    switch (category) {
+        case "Accesorios":
+            isAccesorio = true;
+            break;
+
+        case "Juegos De Mesa":
+            isJuegoMesa = true;
+            break;
+
+        default:
+            isAccesorio = true;
+            isJuegoMesa = true;
+            break;
     }
 
     return (
@@ -41,14 +56,11 @@ function Products() {
             <h1 className="text-center">{title}</h1>
             <div className="row">
                 <div className="col-sm-12 col-md-4">
-                    <div className="card shadow border-0 p-3">
-                        <h4>Busqueda Avanzada</h4>
-                        <input
-                            type="text"
-                            placeholder="Buscar..."
-                            onChange={handleSearchChange}
-                        />
-                    </div>
+                    <SearchBox
+                        onChange={handleSearchChange}
+                        isAccesorio={isAccesorio}
+                        isJuegoMesa={isJuegoMesa}
+                    />
                 </div>
                 <div className="col-sm-12 col-md-8 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                     <CardGrid products={displayedProducts} />

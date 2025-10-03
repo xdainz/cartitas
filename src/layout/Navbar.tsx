@@ -47,9 +47,17 @@ function Navbar() {
                                         <li>
                                             <Link
                                                 className="dropdown-item"
-                                                to="/"
+                                                to="/Productos/Accesorios"
                                             >
                                                 Accesorios
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                className="dropdown-item"
+                                                to="/Productos/Juegos De Mesa"
+                                            >
+                                                Juegos de Mesa
                                             </Link>
                                         </li>
                                     </ul>
