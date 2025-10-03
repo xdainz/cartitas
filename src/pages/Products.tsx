@@ -31,7 +31,6 @@ function Products() {
         setDisplayedProducts(results);
     }, [searchTerm, categorizedProducts]);
 
-    // si la categoria ingresada no existe manda a 404
     let isAccesorio = false;
     let isJuegoMesa = false;
 
