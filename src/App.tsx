@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ProductPage from "./pages/ProductPage";
 import Layout from "./layout/Layout";
+import NotFound from "./pages/404";
 function App() {
     return (
         <>
@@ -21,6 +22,9 @@ function App() {
                     />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
+
+                    {/*si no encuentra la pag manda 404*/}
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>
         </>
