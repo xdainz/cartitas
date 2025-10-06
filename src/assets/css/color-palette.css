@@ -38,6 +38,10 @@
         /* dark shadow*/ 0 4px 8px #00000015; /* soft shadow*/
     --shadow-l: inset 0 1px 2px #ffffff70, /*top light*/ 0 4px 6px #00000030,
         /* dark shadow*/ 0 6px 10px #00000015; /* soft shadow*/
+
+    --gradient: linear-gradient(0deg, var(--bg), var(--bg-light));
+
+    --border-card: solid 1px var(--bg);
 }
 html.dark {
     /* hsl (fallback color) */
@@ -70,50 +74,41 @@ html.dark {
     --warning: oklch(0.7 0.2 100);
     --success: oklch(0.7 0.2 160);
     --info: oklch(0.7 0.2 260);
+
+    --gradient: linear-gradient(0deg, var(--bg), var(--bg-light));
+
+    --border-card: solid 1px var(--bg);
 }
 &::-webkit-scrollbar {
     display: none;
 }
 
 body {
-    background-color: var(--bg);
+    background: var(--bg);
     color: var(--text);
     font-family: var(--font);
 }
 
-.bg-light {
-    background-color: var(--bg-dark) !important;
-    border-radius: 5px;
-}
-
 .box {
+    background: var(--gradient);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: var(--border-card);
+    border-top: 1px var(--highlight);
+    box-shadow: var(--shadow-l);
+}
+
+button {
+    background: var(--bg-light);
+    padding: 0.5rem 1rem 0.7rem 1rem;
     color: var(--text);
-    border-radius: 5px;
-    background-color: var(--bg-light);
-    box-shadow: var(--shadow-s);
-    padding-top: 3rem;
-}
-
-.box.m {
-    box-shadow: var(--shadow-m);
-}
-.box.l {
+    font-weight: 700;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    border: 1px var(--border);
     box-shadow: var(--shadow-l);
 }
 
-.btn-primary {
-    color: var(--text);
-    background-color: var(--bg-light);
-    box-shadow: var(--shadow-s);
-    border: var(--border);
-}
-
-.btn-primary:hover {
-    background-color: var(--highlight);
-    box-shadow: var(--shadow-l);
-}
-
-.btn-primary:active {
-    background-color: var(--primary) !important;
-    box-shadow: var(--shadow-l);
+button:hover {
+    background: var(--highlight);
 }
