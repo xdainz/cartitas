@@ -1,5 +1,42 @@
+import { useEffect } from "react";
+
 function Login() {
-    document.title = "Inicio Sesion";
+
+    useEffect(() => {
+        document.title = "Inicio Sesion";
+
+        const form = document.getElementById("forminiciosession");
+        const email = document.getElementById("email") as HTMLInputElement | null;
+        const password = document.getElementById("password") as HTMLInputElement | null;
+        const loginMessage = document.getElementById("loginMessage") as HTMLInputElement | null;
+
+        if (!form || !loginMessage || !email || !password) return;
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Evita recargar la página
+
+
+
+            // Simulamos que sea correcto
+            if (email.value === "admin" && password.value === "123456") {
+                loginMessage.classList.remove("d-none");
+                loginMessage.classList.remove("alert-danger");
+                loginMessage.classList.add("alert-success");
+                loginMessage.textContent = "Inicio de sesión exitoso, redirigiendo...";
+
+                setTimeout(() => {
+                    window.location.href = "/register"; // esto redirigirá al inicio
+                }, 1500);
+                // login incorrecto
+            } else {
+                loginMessage.classList.remove("d-none");
+                loginMessage.classList.remove("alert-success");
+                loginMessage.classList.add("alert-danger");
+                loginMessage.textContent = "Correo o contraseña incorrectos.";
+            }
+        });
+    }, []);
+
     return (
         <div className="container">
             <div className="container mt-5 pt-5">
@@ -22,10 +59,11 @@ function Login() {
                                     <input type="password" className="form-control" id="password"
                                         placeholder="Ingresa tu contraseña" required />
                                     <div className="invalid-feedback">Ingresa tu contraseña.</div>
-
                                 </div>
+
                                 <div id="loginMessage" className="alert alert-success text-center d-none" role="alert">
-                                    Iniciando Sesión...</div>
+                                    Iniciando Sesión...
+                                </div>
 
                                 <button type="submit" className="btn btn-primary w-100">Ingresar</button>
                             </form>
