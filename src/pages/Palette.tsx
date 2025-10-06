@@ -1,4 +1,5 @@
 import "../assets/css/color-palette.css";
+import Button from "../components/Button";
 import DarkModeToggle from "../components/DarkModeToggle";
 
 function Palette() {
@@ -16,11 +17,11 @@ function Palette() {
             <div className="boxes my-3">
                 <div className="box">
                     <h3 className="text-center">El Jose la Chupa</h3>
-                    <button className="">Boton 1</button>
+                    <Button text="Boton 1" />
                 </div>
                 <div className="box">
                     <h3 className="text-center">El Ale se la Come</h3>
-                    <button className="">Boton 1</button>
+                    <Button text="Boton 2" />
                 </div>
             </div>
         </div>
