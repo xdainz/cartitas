@@ -154,7 +154,7 @@ body {
     gap: 1rem;
 }
 
-button {
+.button {
     background: var(--bg-light);
     padding: 0.5rem 1rem 0.7rem 1rem;
     color: var(--text);
@@ -166,6 +166,6 @@ button {
     transition: box-shadow 0.15s ease-in-out;
 }
 
-button:hover {
+.button:hover {
     box-shadow: var(--shadow-l);
 }
