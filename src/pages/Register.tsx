@@ -1,4 +1,8 @@
+import Rvalidation from "../components/Rvalidation";
+
 function Register() {
+
+    Rvalidation(); // ✅ activa la validación
     return (
         <div className="container">
             <div className="container mt-5 pt-5">
