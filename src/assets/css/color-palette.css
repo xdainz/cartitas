@@ -39,7 +39,8 @@
     --shadow-l: inset 0 1px 2px #ffffff70, /*top light*/ 0 4px 6px #00000030,
         /* dark shadow*/ 0 6px 10px #00000015; /* soft shadow*/
 
-    --gradient: linear-gradient(0deg, var(--bg), var(--bg-light));
+    --gradient: linear-gradient(0deg, var(--bg-dark) 95%, var(--bg));
+    --gradient-hover: linear-gradient(0deg, var(--bg-dark), var(--bg));
 
     --border-card: solid 1px var(--bg);
 }
@@ -75,7 +76,8 @@ html.dark {
     --success: oklch(0.7 0.2 160);
     --info: oklch(0.7 0.2 260);
 
-    --gradient: linear-gradient(0deg, var(--bg), var(--bg-light));
+    --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
+    --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
 
     --border-card: solid 1px var(--bg);
 }
@@ -95,7 +97,55 @@ body {
     border-radius: 1rem;
     border: var(--border-card);
     border-top: 1px var(--highlight);
+    box-shadow: var(--shadow-s);
+    transition: background-color 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.box-product {
+    transition: background-color 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
+    color: var(--text);
+    box-shadow: var(--shadow-m);
+}
+
+.box-product:hover {
+    background: var(--gradient-hover);
     box-shadow: var(--shadow-l);
+}
+
+.box-product-link {
+    text-decoration: none;
+}
+
+.box-product-img {
+    background-color: white;
+    object-fit: contain;
+    border-radius: 1rem;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-s);
+}
+
+.box-product-body {
+    color: var(--text-muted);
+}
+.box-product-title {
+    display: -webkit-box;
+    color: var(--text);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    min-height: 2lh; /* sets min line height to 2 line height (2 lines)*/
+    text-overflow: ellipsis;
+}
+
+.box-product-price {
+    font-weight: bold;
+    font-size: larger;
+    color: var(--secondary);
 }
 
 .boxes {
