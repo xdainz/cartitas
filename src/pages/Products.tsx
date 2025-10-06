@@ -61,9 +61,8 @@ function Products() {
                         isJuegoMesa={isJuegoMesa}
                     />
                 </div>
-                <div className="col-sm-12 col-md-8 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-                    <CardGrid products={displayedProducts} />
-                </div>
+
+                <CardGrid products={displayedProducts} />
             </div>
         </div>
     );
