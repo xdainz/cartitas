@@ -37,7 +37,7 @@ export default function Rvalidation() {
                 document.body.classList.add("fade-out");
 
                 setTimeout(() => {
-                    window.location.href = "/home"; // 👈 aquí puedes poner "/"
+                    window.location.href = "/"; // par donde se redigira la pagina luego de registrarse
                 }, 2000);
             }
         };

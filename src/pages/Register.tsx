@@ -2,7 +2,7 @@ import Rvalidation from "../components/Rvalidation";
 
 function Register() {
 
-    Rvalidation(); // ✅ activa la validación
+    Rvalidation(); //llama al componente
     return (
         <div className="container">
             <div className="container mt-5 pt-5">
