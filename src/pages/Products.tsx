@@ -44,6 +44,11 @@ function Products() {
             isJuegoMesa = true;
             break;
 
+        case "TCG":
+            isJuegoMesa = false;
+            isAccesorio = false;
+            break;
+
         default:
             isAccesorio = true;
             isJuegoMesa = true;
