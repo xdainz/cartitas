@@ -13,7 +13,7 @@ function Login() {
         if (!form || !loginMessage || !email || !password) return;
 
         form.addEventListener("submit", function (e) {
-            e.preventDefault(); // Evita recargar la página
+            e.preventDefault(); // Evita recargar la página 
 
 
 
@@ -25,10 +25,10 @@ function Login() {
                 loginMessage.textContent = "Inicio de sesión exitoso, redirigiendo...";
 
                 setTimeout(() => {
-                    window.location.href = "/register"; // esto redirigirá al inicio
+                    window.location.href = "/"; // esto redirigira a la pagina que elijas
                 }, 1500);
-                // login incorrecto
-            } else {
+
+            } else {//login incorrecto
                 loginMessage.classList.remove("d-none");
                 loginMessage.classList.remove("alert-success");
                 loginMessage.classList.add("alert-danger");
