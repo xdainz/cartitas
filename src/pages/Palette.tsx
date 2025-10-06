@@ -3,15 +3,26 @@ import DarkModeToggle from "../components/DarkModeToggle";
 
 function Palette() {
     return (
-        <div className="container pt-5">
-            <h1>Header</h1>
-            <DarkModeToggle /> dark mode toggle
-            <div className="row bg-light justify-content-center">
-                <p className="col-3 box text-center p-2 m-2">text shadow 1</p>
-                <p className="col-3 box m text-center p-2 m-2">text shadow 2</p>
-                <p className="col-3 box l text-center p-2 m-2">text shadow 3</p>
+        <div className="container my-3">
+            <h1>Box</h1>
+
+            <div className="box my-3">
+                <h1>Header</h1>
+                <DarkModeToggle /> dark mode toggle
             </div>
-            <button className="btn btn-primary">boton 1</button>
+
+            <h2>Box Grid</h2>
+
+            <div className="boxes my-3">
+                <div className="box">
+                    <h3 className="text-center">El Jose la Chupa</h3>
+                    <button className="">Boton 1</button>
+                </div>
+                <div className="box">
+                    <h3 className="text-center">El Ale se la Come</h3>
+                    <button className="">Boton 1</button>
+                </div>
+            </div>
         </div>
     );
 }
