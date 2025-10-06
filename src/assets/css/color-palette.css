@@ -148,6 +148,34 @@ body {
     color: var(--secondary);
 }
 
+.product-img {
+    object-fit: contain;
+    border-radius: 1rem;
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    box-shadow: var(--shadow-l);
+}
+
+.product-title {
+    color: var(--text);
+}
+
+.product-text-muted {
+    color: var(--text-muted);
+}
+
+.product-price {
+    color: var(--secondary);
+    font-weight: bold;
+}
+.product-desc {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--bg-dark);
+    border-radius: 1rem;
+}
+
 .boxes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
