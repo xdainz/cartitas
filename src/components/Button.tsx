@@ -1,12 +1,26 @@
+import { Link } from "react-router-dom";
+
 interface ButtonProps {
-    text: string;
+    children: React.ReactNode;
+    to?: string;
+    linkClass?: string;
 }
-function Button({ text }: ButtonProps) {
-    return (
-        <>
-            <button className="button">{text}</button>
-        </>
-    );
+function Button({ children, to, linkClass }: ButtonProps) {
+    if (to) {
+        return (
+            <>
+                <Link to={to} className={linkClass}>
+                    <button className="button">{children}</button>
+                </Link>
+            </>
+        );
+    } else {
+        return (
+            <>
+                <button className="button">{children}</button>
+            </>
+        );
+    }
 }
 
 export default Button;
