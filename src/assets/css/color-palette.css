@@ -91,6 +91,11 @@ body {
     font-family: var(--font);
 }
 
+.main-content {
+    margin-top: 8.5rem;
+}
+
+
 .box {
     background: var(--gradient);
     padding: 1.5rem;

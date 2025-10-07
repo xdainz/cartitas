@@ -18,7 +18,7 @@ function ProductPage() {
 
     return (
         <>
-            <div className="container py-5">
+            <div className="container">
                 <div className="boxes">
                     <div className="product-img">
                         <img
