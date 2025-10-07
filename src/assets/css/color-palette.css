@@ -197,3 +197,16 @@ body {
 .button:hover {
     box-shadow: var(--shadow-l);
 }
+
+.footer {
+    background: var(--bg-light);
+    color: var(--text-muted);
+    .footer-link {
+        text-decoration: none;
+        color: var(--text-muted);
+        transition: color 0.15 ease-in-out;
+    }
+    .footer-link:hover {
+        color: var(--text);
+    }
+}
