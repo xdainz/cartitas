@@ -31,9 +31,15 @@ function ProductPage() {
                     <div className="">
                         <h1 className="product-title">{product.name}</h1>
                         <p className="product-text-muted">{product.brand}</p>
-                        <p className="product-text-muted">Stock: {product.stock}</p>
+                        <p className="product-text-muted">
+                            Stock: {product.stock}
+                        </p>
                         <h4 className="product-price">${product.price}</h4>
-                        {(product.stock) ? <Button text="Agregar al carrito" /> : <p>ta agotao</p>}
+                        {product.stock ? (
+                            <Button>Agregar al carrito</Button>
+                        ) : (
+                            <p>ta agotao</p>
+                        )}
                     </div>
                 </div>
 
