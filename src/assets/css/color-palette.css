@@ -95,6 +95,36 @@ body {
     margin-top: 8.5rem;
 }
 
+.navbar {
+    background: var(--bg-light);
+    color: var(--text);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    box-shadow: var(--shadow-l);
+}
+
+.nav-icon {
+    text-decoration: none;
+    color: var(--text);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: x-large;
+    transition: box-shadow 0.1s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+    box-shadow: var(--shadow-l);
+    background: var(--highlight);
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+}
 
 .box {
     background: var(--gradient);
@@ -105,6 +135,12 @@ body {
     box-shadow: var(--shadow-s);
     transition: background-color 0.15s ease-in-out;
     transition: box-shadow 0.15s ease-in-out;
+}
+
+.monkey-box {
+    padding: 0rem;
+    box-shadow: var(--shadow-l);
+    border-radius: 1rem;
 }
 
 .box-product {
