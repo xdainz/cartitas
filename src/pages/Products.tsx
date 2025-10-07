@@ -20,6 +20,8 @@ function Products() {
 
     const title = category ? category : "Productos";
 
+    document.title = title;
+
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(event.target.value);
     };
@@ -57,7 +59,6 @@ function Products() {
 
     return (
         <div className="container">
-            <h1 className="text-center">{title}</h1>
             <div className="row">
                 <div className="col-sm-12 col-md-4">
                     <SearchBox
