@@ -13,7 +13,7 @@ function SearchBox({
 }: AdvancedSearchProps) {
     return (
         <>
-            <div className="card shadow border-0 p-3">
+            <div className="box">
                 <h4>Busqueda</h4>
                 <input
                     type="text"

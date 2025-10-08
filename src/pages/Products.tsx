@@ -20,6 +20,8 @@ function Products() {
 
     const title = category ? category : "Productos";
 
+    document.title = title;
+
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(event.target.value);
     };
@@ -44,6 +46,11 @@ function Products() {
             isJuegoMesa = true;
             break;
 
+        case "TCG":
+            isJuegoMesa = false;
+            isAccesorio = false;
+            break;
+
         default:
             isAccesorio = true;
             isJuegoMesa = true;
@@ -52,7 +59,6 @@ function Products() {
 
     return (
         <div className="container">
-            <h1 className="text-center">{title}</h1>
             <div className="row">
                 <div className="col-sm-12 col-md-4">
                     <SearchBox
@@ -61,9 +67,8 @@ function Products() {
                         isJuegoMesa={isJuegoMesa}
                     />
                 </div>
-                <div className="col-sm-12 col-md-8 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-                    <CardGrid products={displayedProducts} />
-                </div>
+
+                <CardGrid products={displayedProducts} />
             </div>
         </div>
     );

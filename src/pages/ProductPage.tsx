@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import JsonProducts from "../hooks/JsonProduct";
+import Button from "../components/Button";
 
 function ProductPage() {
     const { category, id } = useParams();
@@ -10,7 +11,7 @@ function ProductPage() {
 
     if (!product)
         return (
-            <div className="container text-center">
+            <div className="container text-center py-5">
                 <h1>El producto no se ha encontrado :C</h1>
             </div>
         );
@@ -18,27 +19,31 @@ function ProductPage() {
     return (
         <>
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="boxes">
+                    <div className="product-img">
                         <img
-                            className="product-img shadow"
+                            className="product-img"
                             src={product.image}
                             alt={product.name + "image"}
                         ></img>
                     </div>
 
-                    <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h1>{product.name}</h1>
-                        <p className="subtext">{product.brand}</p>
-                        <h4 className="product-price">
-                            <b>${product.price}</b>
-                        </h4>
-                        <button className="btn btn-primary product-btn">
-                            Agregar al carrito
-                        </button>
+                    <div className="">
+                        <h1 className="product-title">{product.name}</h1>
+                        <p className="product-text-muted">{product.brand}</p>
+                        <p className="product-text-muted">
+                            Stock: {product.stock}
+                        </p>
+                        <h4 className="product-price">${product.price}</h4>
+                        {product.stock ? (
+                            <Button>Agregar al carrito</Button>
+                        ) : (
+                            <p>ta agotao</p>
+                        )}
                     </div>
                 </div>
-                <div className="product-desc mt-3">
+
+                <div className="product-desc">
                     <p>Descripcion producto:</p>
                     <p>{product.desc}</p>
                 </div>

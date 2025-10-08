@@ -1,0 +1,253 @@
+:root {
+    /* hsl (fallback color) */
+    --bg-dark: hsl(277 100% 96%);
+    --bg: hsl(277 100% 100%);
+    --bg-light: hsl(277 100% 100%);
+    --text: hsl(280 100% 8%);
+    --text-muted: hsl(283 100% 29%);
+    --highlight: hsl(278 100% 100%);
+    --border: hsl(279 60% 58%);
+    --border-muted: hsl(279 89% 71%);
+    --primary: hsl(283 100% 29%);
+    --secondary: hsl(92 100% 8%);
+    --danger: hsl(4 99% 37%);
+    --warning: hsl(50 100% 12%);
+    --success: hsl(159 100% 9%);
+    --info: hsl(215 95% 42%);
+    /* oklch */
+    --bg-dark: oklch(0.92 0.1 312);
+    --bg: oklch(0.96 0.1 312);
+    --bg-light: oklch(1 0.1 312);
+    --text: oklch(0.15 0.2 312);
+    --text-muted: oklch(0.4 0.2 312);
+    --highlight: oklch(1 0.2 312);
+    --border: oklch(0.6 0.2 312);
+    --border-muted: oklch(0.7 0.2 312);
+    --primary: oklch(0.4 0.2 312);
+    --secondary: oklch(0.4 0.2 132);
+    --danger: oklch(0.5 0.2 30);
+    --warning: oklch(0.5 0.2 100);
+    --success: oklch(0.5 0.2 160);
+    --info: oklch(0.5 0.2 260);
+    --font: "Noto Sans", sans-serif;
+
+    /* BOX SHADOW */
+    --shadow-s: inset 0 1px 2px #ffffff30, /*top light*/ 0 1px 2px #00000030,
+        /* dark shadow*/ 0 2px 4px #00000015; /* soft shadow*/
+    --shadow-m: inset 0 1px 2px #ffffff50, /*top light*/ 0 2px 4px #00000030,
+        /* dark shadow*/ 0 4px 8px #00000015; /* soft shadow*/
+    --shadow-l: inset 0 1px 2px #ffffff70, /*top light*/ 0 4px 6px #00000030,
+        /* dark shadow*/ 0 6px 10px #00000015; /* soft shadow*/
+
+    --gradient: linear-gradient(0deg, var(--bg-dark) 95%, var(--bg));
+    --gradient-hover: linear-gradient(0deg, var(--bg-dark), var(--bg));
+
+    --border-card: solid 1px var(--bg);
+}
+html.dark {
+    /* hsl (fallback color) */
+    --bg-dark: hsl(274 100% 4%);
+    --bg: hsl(279 100% 7%);
+    --bg-light: hsl(281 100% 10%);
+    --text: hsl(277 100% 100%);
+    --text-muted: hsl(277 51% 75%);
+    --highlight: hsl(280 57% 45%);
+    --border: hsl(283 100% 29%);
+    --border-muted: hsl(284 100% 17%);
+    --primary: hsl(278 100% 79%);
+    --secondary: hsl(87 70% 46%);
+    --danger: hsl(7 100% 66%);
+    --warning: hsl(53 100% 21%);
+    --success: hsl(162 100% 22%);
+    --info: hsl(217 100% 70%);
+    /* oklch */
+    --bg-dark: oklch(0.1 0.1 312);
+    --bg: oklch(0.15 0.1 312);
+    --bg-light: oklch(0.2 0.1 312);
+    --text: oklch(0.96 0.1 312);
+    --text-muted: oklch(0.76 0.1 312);
+    --highlight: oklch(0.5 0.2 312);
+    --border: oklch(0.4 0.2 312);
+    --border-muted: oklch(0.3 0.2 312);
+    --primary: oklch(0.76 0.2 312);
+    --secondary: oklch(0.76 0.2 132);
+    --danger: oklch(0.7 0.2 30);
+    --warning: oklch(0.7 0.2 100);
+    --success: oklch(0.7 0.2 160);
+    --info: oklch(0.7 0.2 260);
+
+    --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
+    --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
+
+    --border-card: solid 1px var(--bg);
+}
+&::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+}
+
+.main-content {
+    margin-top: 8.5rem;
+}
+
+.navbar {
+    background: var(--bg-light);
+    color: var(--text);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    box-shadow: var(--shadow-l);
+}
+
+.nav-icon {
+    text-decoration: none;
+    color: var(--text);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: x-large;
+    transition: box-shadow 0.1s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+    box-shadow: var(--shadow-l);
+    background: var(--highlight);
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.box {
+    background: var(--gradient);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: var(--border-card);
+    border-top: 1px var(--highlight);
+    box-shadow: var(--shadow-s);
+    transition: background-color 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.monkey-box {
+    padding: 0rem;
+    box-shadow: var(--shadow-l);
+    border-radius: 1rem;
+}
+
+.box-product {
+    transition: background-color 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
+    color: var(--text);
+    box-shadow: var(--shadow-m);
+}
+
+.box-product:hover {
+    background: var(--gradient-hover);
+    box-shadow: var(--shadow-l);
+}
+
+.box-product-link {
+    text-decoration: none;
+}
+
+.box-product-img {
+    background-color: white;
+    object-fit: contain;
+    border-radius: 1rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-s);
+}
+
+.box-product-body {
+    color: var(--text-muted);
+}
+.box-product-title {
+    display: -webkit-box;
+    color: var(--text);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    min-height: 2lh; /* sets min line height to 2 line height (2 lines)*/
+    text-overflow: ellipsis;
+}
+
+.box-product-price {
+    font-weight: bold;
+    font-size: larger;
+    color: var(--secondary);
+}
+
+.product-img {
+    object-fit: contain;
+    border-radius: 1rem;
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    box-shadow: var(--shadow-l);
+}
+
+.product-title {
+    color: var(--text);
+}
+
+.product-text-muted {
+    color: var(--text-muted);
+}
+
+.product-price {
+    color: var(--secondary);
+    font-weight: bold;
+}
+.product-desc {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--bg-dark);
+    border-radius: 1rem;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.button {
+    background: var(--bg-light);
+    padding: 0.5rem 1rem 0.7rem 1rem;
+    color: var(--text);
+    font-weight: 700;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    border: 1px var(--border);
+    box-shadow: var(--shadow-s);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: var(--shadow-l);
+}
+
+.footer {
+    background: var(--bg-light);
+    color: var(--text-muted);
+    .footer-link {
+        text-decoration: none;
+        color: var(--text-muted);
+        transition: color 0.15 ease-in-out;
+    }
+    .footer-link:hover {
+        color: var(--text);
+    }
+}

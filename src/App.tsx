@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./assets/css/custom-theme.css";
+import "../src/assets/css/color-palette.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import ProductPage from "./pages/ProductPage";
 import Layout from "./layout/Layout";
 import NotFound from "./pages/404";
+import Palette from "./pages/Palette";
 function App() {
     return (
         <>
@@ -22,6 +23,9 @@ function App() {
                     />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
+
+                    {/*TESTING THEME*/}
+                    <Route path="/Palette" element={<Palette />} />
 
                     {/*si no encuentra la pag manda 404*/}
                     <Route path="*" element={<NotFound />} />
