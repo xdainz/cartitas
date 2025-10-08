@@ -10,6 +10,7 @@ import ProductPage from "./pages/ProductPage";
 import Layout from "./layout/Layout";
 import NotFound from "./pages/404";
 import Palette from "./pages/Palette";
+import Eventos from "./pages/Eventos";
 function App() {
     return (
         <>
@@ -22,6 +23,7 @@ function App() {
                         path="/Productos/:category/:id"
                         element={<ProductPage />}
                     />
+                    <Route path="/Eventos" element={<Eventos />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
 

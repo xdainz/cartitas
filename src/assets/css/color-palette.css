@@ -225,6 +225,31 @@ body {
     color: var(--secondary);
 }
 
+.event-box {
+    background: var(--gradient-hover);
+    padding: 1.5rem 3rem 1.5rem 2rem;
+}
+
+.event-desc {
+    height: 25rem;
+    max-height: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-map {
+    height: 22rem;
+    max-height: 22rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-l);
+}
+
+.map-iframe {
+    height: 100%;
+    width: 100%;
+}
+
 .product-img {
     object-fit: contain;
     border-radius: 1rem;
