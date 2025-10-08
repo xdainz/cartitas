@@ -5,7 +5,7 @@ function Carousel() {
   return (
     <div
       id="carouselExampleFade"
-      className="carousel slide carousel-fade mi-cont box"
+      className="carousel slide carousel-fade  box"
       data-bs-ride="carousel"
       data-bs-interval="3000"
 

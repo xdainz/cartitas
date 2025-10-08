@@ -10,5 +10,4 @@ function TextMove() {
     );
 
 }
-
 export default TextMove
