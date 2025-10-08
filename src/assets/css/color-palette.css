@@ -137,6 +137,12 @@ body {
     transition: box-shadow 0.15s ease-in-out;
 }
 
+.login-box {
+    padding: 1rem 4rem 2.5rem 4rem;
+    background: var(--gradient-hover);
+    box-shadow: var(--shadow-l);
+}
+
 .monkey-box {
     padding: 0rem;
     box-shadow: var(--shadow-l);
