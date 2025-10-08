@@ -279,7 +279,7 @@
         /* Ajusta la imagen para cubrir el espacio sin distorsionarse */
         object-position: center;
         /* Centra la imagen */
-        background-color: #222;
+        background-color: #444;
         border-radius: 20px;
         margin: 15px;
     }
