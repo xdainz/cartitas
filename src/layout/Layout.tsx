@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import TextMove from "./textmove";
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -18,6 +19,7 @@ function Layout({ children }: LayoutProps) {
         <>
             <Navbar />
             <main className="main-content">{children}</main>
+            <TextMove />
             <Footer />
         </>
     );

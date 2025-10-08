@@ -1,24 +1,25 @@
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import JsonProducts from "../hooks/JsonProduct";
 
 function Carousel() {
   return (
     <div
       id="carouselExampleFade"
-      className="carousel slide carousel-fade"
+      className="carousel slide carousel-fade mi-cont box"
       data-bs-ride="carousel"
       data-bs-interval="3000"
+
     >
-      <div className="carousel-inner">
+      <div className="carousel-inner ">
         {JsonProducts.slice(0, 3).map((product, index) => (
           <div
             key={product.id}
             className={`carousel-item ${index === 0 ? "active" : ""
-              } contenedor-carrusel-personalizado`}
+              } contenedor-p`}
           >
             <img
               src={product.image}
-              className="d-block img-carrusel-personalizada"
+              className="d-block img-p"
               alt={product.name}
             />
             <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
