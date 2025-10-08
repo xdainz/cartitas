@@ -1,7 +1,6 @@
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import JsonProducts from "../hooks/JsonProduct";
 
-
 function Carousel() {
   return (
     <div
