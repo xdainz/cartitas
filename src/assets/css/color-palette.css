@@ -95,6 +95,36 @@ body {
     margin-top: 8.5rem;
 }
 
+.alert {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.alert a {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.alert-success {
+    background-color: var(--success);
+    border: var(--success);
+}
+
+.alert-warning {
+    background-color: var(--warning);
+    border: var(--warning);
+}
+
+.alert-danger {
+    background: var(--danger);
+    border: var(--danger);
+}
+
+.alert-info {
+    background: var(--info);
+    border: var(--info);
+}
+
 .navbar {
     background: var(--bg-light);
     color: var(--text);
@@ -135,6 +165,12 @@ body {
     box-shadow: var(--shadow-s);
     transition: background-color 0.15s ease-in-out;
     transition: box-shadow 0.15s ease-in-out;
+}
+
+.login-box {
+    padding: 1rem 4rem 2.5rem 4rem;
+    background: var(--gradient-hover);
+    box-shadow: var(--shadow-l);
 }
 
 .monkey-box {
