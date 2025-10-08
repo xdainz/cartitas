@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import JsonProducts from "../hooks/JsonProduct";
-import NotFound from "./404";
 
 function ProductPage() {
     const { category, id } = useParams();
@@ -9,7 +8,12 @@ function ProductPage() {
         (prod) => prod.category === category && prod.id === id
     );
 
-    if (!product) return <NotFound />;
+    if (!product)
+        return (
+            <div className="container text-center">
+                <h1>El producto no se ha encontrado :C</h1>
+            </div>
+        );
 
     return (
         <>

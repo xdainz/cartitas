@@ -1,29 +1,68 @@
 import { useParams } from "react-router";
 import CardGrid from "../components/CardGrid";
 import JsonProducts from "../hooks/JsonProduct";
-import type { Product } from "../types/Product";
-import NotFound from "./404";
+import { useEffect, useState, useMemo } from "react";
+import SearchBox from "../components/SearchBox";
 
 function Products() {
     const { category } = useParams();
+    const [searchTerm, setSearchTerm] = useState("");
 
-    // filtrar solo productos con la "categoria" q corresponda a www.paginaweb.com/products/{categoria}
-    // esto al implementar la api deberia solamente hacer un GET de los productos con esa categoria
-    const productlist: Product[] = JsonProducts.filter(
-        (prod) => prod.category === category
-    );
+    // usa useMemo para updatear la lista solo cuando cambia su contenido
+    const categorizedProducts = useMemo(() => {
+        return category
+            ? JsonProducts.filter((prod) => prod.category === category)
+            : JsonProducts;
+    }, [category]);
 
-    if (productlist.length === 0) return <NotFound />;
+    const [displayedProducts, setDisplayedProducts] =
+        useState(categorizedProducts);
+
+    const title = category ? category : "Productos";
+
+    const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchTerm(event.target.value);
+    };
+
+    useEffect(() => {
+        const results = categorizedProducts.filter((product) =>
+            product.name?.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setDisplayedProducts(results);
+    }, [searchTerm, categorizedProducts]);
+
+    let isAccesorio = false;
+    let isJuegoMesa = false;
+
+    // checkea la categoria para ver q campos mostrar en el componente de busqueda
+    switch (category) {
+        case "Accesorios":
+            isAccesorio = true;
+            break;
+
+        case "Juegos De Mesa":
+            isJuegoMesa = true;
+            break;
+
+        default:
+            isAccesorio = true;
+            isJuegoMesa = true;
+            break;
+    }
 
     return (
         <div className="container">
-            <h1 className="text-center">{category}</h1>
+            <h1 className="text-center">{title}</h1>
             <div className="row">
                 <div className="col-sm-12 col-md-4">
-                    aca va la busqueda avanzada
+                    <SearchBox
+                        onChange={handleSearchChange}
+                        isAccesorio={isAccesorio}
+                        isJuegoMesa={isJuegoMesa}
+                    />
                 </div>
                 <div className="col-sm-12 col-md-8 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-                    <CardGrid products={productlist} />
+                    <CardGrid products={displayedProducts} />
                 </div>
             </div>
         </div>

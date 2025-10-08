@@ -9,7 +9,12 @@ function Card(product: Product) {
                     <div className="card product-card">
                         <Link
                             className="card-link"
-                            to={"/" + product.category + "/" + product.id}
+                            to={
+                                "/Productos/" +
+                                product.category +
+                                "/" +
+                                product.id
+                            }
                         >
                             <img
                                 className="card-img-top"

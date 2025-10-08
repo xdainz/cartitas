@@ -7,16 +7,24 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ProductPage from "./pages/ProductPage";
 import Layout from "./layout/Layout";
+import NotFound from "./pages/404";
 function App() {
     return (
         <>
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/:category" element={<Products />} />
-                    <Route path="/:category/:id" element={<ProductPage />} />
+                    <Route path="/Productos" element={<Products />} />
+                    <Route path="/Productos/:category" element={<Products />} />
+                    <Route
+                        path="/Productos/:category/:id"
+                        element={<ProductPage />}
+                    />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
+
+                    {/*si no encuentra la pag manda 404*/}
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>
         </>

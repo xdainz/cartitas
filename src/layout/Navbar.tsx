@@ -26,9 +26,12 @@ function Navbar() {
                         <div className="d-flex align-items-center mx-auto w-100">
                             <ul className="navbar-nav ">
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link btn btn-nav btn-ripple-water">
+                                    <Link
+                                        className="nav-link btn btn-nav btn-ripple-water"
+                                        to="/Productos"
+                                    >
                                         Productos
-                                    </a>
+                                    </Link>
                                     <ul
                                         className="dropdown-menu"
                                         aria-labelledby="navbarDropdown"
@@ -36,7 +39,7 @@ function Navbar() {
                                         <li>
                                             <Link
                                                 className="dropdown-item"
-                                                to="/TCG"
+                                                to="/Productos/TCG"
                                             >
                                                 Trading Card Games
                                             </Link>
@@ -44,27 +47,22 @@ function Navbar() {
                                         <li>
                                             <Link
                                                 className="dropdown-item"
-                                                to="/"
+                                                to="/Productos/Accesorios"
                                             >
                                                 Accesorios
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                className="dropdown-item"
+                                                to="/Productos/Juegos De Mesa"
+                                            >
+                                                Juegos de Mesa
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
-                            <form className="d-flex position-relative mx-auto w-lg-auto my-2 my-lg-0">
-                                <span className="position-absolute top-50 start-0 translate-middle-y ps-3">
-                                    🔍
-                                </span>
-                                <input
-                                    className="form-control ps-5 rounded-pill"
-                                    type="search"
-                                    placeholder="Buscar..."
-                                    aria-label="Buscar"
-                                ></input>
-                            </form>
-
-                            <div className="navbar-nav"></div>
                             <li className="nav-item dropdown">
                                 <button
                                     className="nav-link btn btn-nav btn-ripple-water"

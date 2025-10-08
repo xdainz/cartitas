@@ -52,5 +52,23 @@
         "image": "https://www.magicsur.cl/24024-large_default/mtg-caja-de-collector-booster-the-brothers-war-buy-a-box.jpg",
         "desc": "Revive la guerra épica entre Urza y Mishra con esta caja de booster coleccionista. Contiene cartas con arte schematic, bordes retro, foils prístinos y piezas de colección únicas de esta guerra legendaria.",
         "category": "TCG"
+    },
+    {
+        "id": "3224",
+        "name": "Protectores Dual Matte",
+        "brand": "Dragon Shield",
+        "price": "13.990",
+        "image": "https://collectorcenter.cl/cdn/shop/files/dragon-shield-sleeves-standard-size-matte-dual-100_87d15f1c-7eab-47ba-9eef-939ff74cee58.png?v=1742313517",
+        "desc": "",
+        "category": "Accesorios"
+    },
+    {
+        "id": "3200",
+        "name": "Catan",
+        "brand": "Devir",
+        "price": "35.990",
+        "image": "https://devirinvestments.s3.eu-west-1.amazonaws.com/img/catalog/product/8436017220100-1200-frontflat.jpg",
+        "desc": "",
+        "category": "Juegos De Mesa"
     }
 ]
