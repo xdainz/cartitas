@@ -95,6 +95,36 @@ body {
     margin-top: 8.5rem;
 }
 
+.alert {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.alert a {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.alert-success {
+    background-color: var(--success);
+    border: var(--success);
+}
+
+.alert-warning {
+    background-color: var(--warning);
+    border: var(--warning);
+}
+
+.alert-danger {
+    background: var(--danger);
+    border: var(--danger);
+}
+
+.alert-info {
+    background: var(--info);
+    border: var(--info);
+}
+
 .navbar {
     background: var(--bg-light);
     color: var(--text);
