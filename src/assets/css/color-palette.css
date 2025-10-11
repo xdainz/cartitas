@@ -157,7 +157,7 @@ body {
 }
 
 .box {
-    background: var(--gradient);
+    background: var(--bg);
     padding: 1.5rem;
     border-radius: 1rem;
     border: var(--border-card);
@@ -180,14 +180,14 @@ body {
 }
 
 .box-product {
-    transition: background-color 0.15s ease-in-out;
-    transition: box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding: 1rem;
     color: var(--text);
-    box-shadow: var(--shadow-m);
+    box-shadow: var(--shadow-s);
 }
 
 .box-product:hover {
-    background: var(--gradient-hover);
+    background: var(--bg-light);
     box-shadow: var(--shadow-l);
 }
 
@@ -202,7 +202,7 @@ body {
     width: 100%;
     aspect-ratio: 1/1;
     margin-bottom: 1rem;
-    box-shadow: var(--shadow-s);
+    box-shadow: var(--shadow-m);
 }
 
 .box-product-body {
@@ -210,6 +210,7 @@ body {
 }
 .box-product-title {
     display: -webkit-box;
+    font-weight: bold;
     color: var(--text);
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -217,6 +218,10 @@ body {
     overflow: hidden;
     min-height: 2lh; /* sets min line height to 2 line height (2 lines)*/
     text-overflow: ellipsis;
+}
+
+.box-product-brand {
+    font-weight: 400;
 }
 
 .box-product-price {
@@ -278,6 +283,12 @@ body {
     border-radius: 1rem;
 }
 
+.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+}
+
 .boxes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -285,10 +296,10 @@ body {
 }
 
 .button {
-    background: var(--bg-light);
+    background: var(--bg);
     padding: 0.5rem 1rem 0.7rem 1rem;
     color: var(--text);
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 0.5rem;
     margin-top: 1.5rem;
     border: 1px var(--border);
@@ -297,6 +308,8 @@ body {
 }
 
 .button:hover {
+    color: var(--primary);
+    background: var(--bg-light);
     box-shadow: var(--shadow-l);
 }
 
