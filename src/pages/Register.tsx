@@ -1,4 +1,4 @@
-import Rvalidation from "../components/Rvalidation";
+import Rvalidation from "../hooks/Rvalidation";
 
 function Register() {
     Rvalidation(); //llama al componente
