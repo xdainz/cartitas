@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
 import Rvalidation from "../hooks/Rvalidation";
 
 function Register() {
     Rvalidation(); //llama al componente
     return (
         <div className="container">
+            <Link to="/" className="link">
+                &#8617; Regresar a la tienda
+            </Link>
             <div>
                 <div className="row d-flex justify-content-center">
                     <div className="col-12 col-md-6 col-lg-4">

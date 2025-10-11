@@ -91,13 +91,22 @@ body {
     font-family: var(--font);
 }
 
+.link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 .main-content {
     margin-top: 8.5rem;
 }
 
 .alert {
-    font-weight: 500;
-    color: var(--text);
+    font-weight: 400;
+    color: var(--highlight);
 }
 
 .alert a {
@@ -169,7 +178,7 @@ body {
 
 .login-box {
     padding: 1rem 4rem 2.5rem 4rem;
-    background: var(--gradient-hover);
+    background: var(--bg);
     box-shadow: var(--shadow-l);
 }
 
