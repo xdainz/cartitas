@@ -9,7 +9,6 @@ import Register from "./pages/Register";
 import ProductPage from "./pages/ProductPage";
 import Layout from "./layout/Layout";
 import NotFound from "./pages/404";
-import Palette from "./pages/Palette";
 import Eventos from "./pages/Eventos";
 function App() {
     return (
@@ -26,9 +25,6 @@ function App() {
                     <Route path="/Eventos" element={<Eventos />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
-
-                    {/*TESTING THEME*/}
-                    <Route path="/Palette" element={<Palette />} />
 
                     {/*si no encuentra la pag manda 404*/}
                     <Route path="*" element={<NotFound />} />

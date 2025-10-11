@@ -8,10 +8,10 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
     const location = useLocation();
-    const pagesWithoutLayout = ["/Login", "/Register", "/Palette"];
+    const pagesWithoutLayout = ["/login", "/register"];
 
     if (pagesWithoutLayout.includes(location.pathname)) {
-        return <>{children}</>;
+        return <div className="pt-5">{children}</div>;
     }
 
     return (
