@@ -7,6 +7,15 @@ function Home() {
         <div className="container">
             <TextMove />
             <Carousel />
+            <div >
+                <h4 >Destacado</h4>
+            </div>
+            <div>
+
+
+            </div>
+
+
         </div>
     );
 }

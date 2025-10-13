@@ -5,7 +5,7 @@
         "brand": "Magic: The Gathering",
         "stock": 67,
         "price": "185.000",
-        "image": "https://m.media-amazon.com/images/I/71mzlB8NsML._UF894,1000_QL80_.jpg",
+        "image": "src/assets/images/drako3.png",
         "desc": "Embárcate en una aventura de Dungeons & Dragons con esta caja de booster coleccionista. Contiene cartas con tratamiento especial, foils espectaculares y criaturas legendarias únicas del universo de Faerûn.",
         "category": "TCG"
     },
