@@ -199,6 +199,8 @@ body {
 
 .box-product-brand {
     font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .box-product-price {
@@ -253,11 +255,22 @@ body {
     box-shadow: var(--shadow-l);
 }
 
+.product-body label {
+    display: block;
+    margin-bottom: 5px;
+}
+
 .product-title {
+    font-size: 2.5rem;
+    font-weight: 700;
     color: var(--text);
 }
 
-.product-text-muted {
+.product-brand {
+    color: var(--text-muted);
+}
+
+.product-stock {
     color: var(--text-muted);
 }
 
