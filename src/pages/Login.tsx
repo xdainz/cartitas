@@ -18,9 +18,9 @@ function Login() {
         if (!form || !loginMessage || !email || !password) return;
 
         form.addEventListener("submit", function (e) {
-            e.preventDefault(); // Evita recargar la página
+            e.preventDefault(); // evita recargar la página
 
-            // Simulamos que sea correcto
+            // simulamos que sea correcto
             if (email.value === "admin" && password.value === "123456") {
                 loginMessage.classList.remove("d-none");
                 loginMessage.classList.remove("alert-danger");
