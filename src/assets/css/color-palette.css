@@ -361,6 +361,16 @@ body {
     color: white !important;
 }
 
+.custom-dropdown-menu {
+    /* HOVER STATE */
+    --bs-dropdown-link-hover-bg: var(--border);
+    --bs-dropdown-link-hover-color: white;
+
+    /* ACTIVE/SELECTED STATE */
+    --bs-dropdown-link-active-bg: var(--primary);
+    --bs-dropdown-link-active-color: white;
+}
+
 .footer {
     background: var(--bg-dark);
     color: var(--text-muted);

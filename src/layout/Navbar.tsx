@@ -17,7 +17,7 @@ function Navbar() {
                         >
                             Productos
                         </Dropdown.Toggle>
-                        <Dropdown.Menu>
+                        <Dropdown.Menu className="custom-dropdown-menu">
                             <Dropdown.Item href="/Productos/TCG">
                                 Trading Card Games
                             </Dropdown.Item>
@@ -48,7 +48,7 @@ function Navbar() {
                         <Dropdown.Toggle className="custom-dropdown-toggle">
                             Mi Cuenta
                         </Dropdown.Toggle>
-                        <Dropdown.Menu>
+                        <Dropdown.Menu className="custom-dropdown-menu">
                             <Dropdown.Item href="/login">
                                 Iniciar Sesion
                             </Dropdown.Item>
