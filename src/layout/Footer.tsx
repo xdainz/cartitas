@@ -1,5 +1,3 @@
-import DarkModeToggle from "../components/DarkModeToggle";
-
 function Footer() {
     return (
         <>
@@ -20,9 +18,6 @@ function Footer() {
                         <a href="#" className="footer-link">
                             Support
                         </a>
-                    </li>
-                    <li>
-                        <DarkModeToggle />
                     </li>
                 </ul>
             </div>
