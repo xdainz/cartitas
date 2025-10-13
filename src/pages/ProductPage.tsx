@@ -27,12 +27,10 @@ function ProductPage() {
                         ></img>
                     </div>
 
-                    <div>
+                    <div className="product-body">
                         <label className="product-title">{product.name}</label>
-                        <label className="product-text-muted">
-                            {product.brand}
-                        </label>
-                        <label className="product-text-muted">
+                        <label className="product-brand">{product.brand}</label>
+                        <label className="product-stock">
                             Stock: {product.stock}
                         </label>
                         <label className="product-price">
