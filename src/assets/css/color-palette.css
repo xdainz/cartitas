@@ -199,6 +199,8 @@ body {
 
 .box-product-brand {
     font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .box-product-price {
