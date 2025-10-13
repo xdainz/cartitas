@@ -1,3 +1,4 @@
+import { Dropdown } from "react-bootstrap";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
@@ -9,19 +10,28 @@ function Navbar() {
             </Link>
             <ul className="nav-items">
                 <li>
-                    <Button linkClass="nav-link" to="/Productos">
-                        Productos
-                    </Button>
-                </li>
-                <li>
-                    <Button linkClass="nav-link" to="/Productos/TCG">
-                        Trading Card Games
-                    </Button>
-                </li>
-                <li>
-                    <Button linkClass="nav-link" to="/Productos/Accesorios">
-                        Accesorios
-                    </Button>
+                    <Dropdown>
+                        <Dropdown.Toggle
+                            className="custom-dropdown-toggle"
+                            id="productDropdown"
+                        >
+                            Productos
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu className="custom-dropdown-menu">
+                            <Dropdown.Item href="/Productos/TCG">
+                                Trading Card Games
+                            </Dropdown.Item>
+                            <Dropdown.Item href="/Productos/Accesorios">
+                                Accesorios
+                            </Dropdown.Item>
+                            <Dropdown.Item href="/Productos/Juegos De Mesa">
+                                Juegos de Mesa
+                            </Dropdown.Item>
+                            <Dropdown.Item href="/Productos">
+                                Ver Todo
+                            </Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </li>
                 <li>
                     <Button linkClass="nav-link" to="/Eventos">
@@ -29,19 +39,24 @@ function Navbar() {
                     </Button>
                 </li>
                 <li>
-                    <Button linkClass="nav-link" to="/login">
-                        Iniciar Sesion
-                    </Button>
-                </li>
-                <li>
-                    <Button linkClass="nav-link" to="/register">
-                        Registro
-                    </Button>
-                </li>
-                <li>
                     <Button linkClass="nav-link" to="/Carrito">
                         Carrito
                     </Button>
+                </li>
+                <li>
+                    <Dropdown>
+                        <Dropdown.Toggle className="custom-dropdown-toggle">
+                            Mi Cuenta
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu className="custom-dropdown-menu">
+                            <Dropdown.Item href="/login">
+                                Iniciar Sesion
+                            </Dropdown.Item>
+                            <Dropdown.Item href="/register">
+                                Registrarse
+                            </Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </li>
             </ul>
         </span>
