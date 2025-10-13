@@ -332,7 +332,8 @@ body {
     gap: 1rem;
 }
 
-.button {
+.button,
+.btn {
     background: var(--bg);
     padding: 0.5rem 1rem 0.7rem 1rem;
     color: var(--text);
@@ -344,10 +345,20 @@ body {
     transition: box-shadow 0.15s ease-in-out;
 }
 
-.button:hover {
+.button:hover,
+.btn:hover {
     color: var(--primary);
     background: var(--bg-light);
     box-shadow: var(--shadow-l);
+}
+
+/* override de estilos dropdown*/
+.custom-dropdown-toggle[aria-expanded="true"],
+.custom-dropdown-toggle[aria-expanded="true"]:hover,
+.custom-dropdown-toggle:focus,
+.custom-dropdown-toggle:active {
+    background: var(--primary) !important;
+    color: white !important;
 }
 
 .footer {
