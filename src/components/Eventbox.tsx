@@ -1,21 +1,20 @@
 import type { Evento } from "../types/Evento";
 
 const MAPS_API_KEY = "test";
-function Eventbox(event: Evento) {
+function EventBox(event: Evento) {
     return (
-        <div className="box event-box mb-4">
+        <div className="box event-box">
             <h3>{event.nombreEvento}</h3>
-            <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                <div className="col event-desc">
+            <div className="gridbox-event">
+                <div className="event-body">
                     <h6>
                         {event.fecha} - {event.hora}
                     </h6>
                     <h6>Tipo: {event.tipoEvento}</h6>
                     <h6>Organiza: {event.organizador}</h6>
-                    <p>{event.descripcion}</p>
-                    <button className="button w-100">Ver Mas</button>
+                    <p className="event-desc">{event.descripcion}</p>
                 </div>
-                <div className="col event-map">
+                <div className="event-map">
                     <iframe
                         className="map-iframe"
                         loading="lazy"
@@ -26,9 +25,10 @@ function Eventbox(event: Evento) {
                         }
                     ></iframe>
                 </div>
+                <button className="button w-100">Ver Mas</button>
             </div>
         </div>
     );
 }
 
-export default Eventbox;
+export default EventBox;

@@ -240,28 +240,40 @@ body {
 }
 
 .event-box {
-    background: var(--gradient-hover);
-    padding: 1.5rem 3rem 1.5rem 2rem;
+    background: var(--bg-light);
+}
+
+.event-body {
+    color: var(--text-muted);
 }
 
 .event-desc {
-    height: 25rem;
-    max-height: 25rem;
+    display: -webkit-box;
+    color: var(--text);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    min-height: 3lh;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
+.gridbox-event {
+    display: grid;
+    gap: 1rem;
+}
+
 .event-map {
-    height: 22rem;
-    max-height: 22rem;
     background: white;
     border-radius: 1rem;
     box-shadow: var(--shadow-l);
+    height: 20rem;
 }
 
 .map-iframe {
     height: 100%;
     width: 100%;
+    border-radius: 1rem;
 }
 
 .product-img {

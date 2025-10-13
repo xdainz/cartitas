@@ -1,11 +1,11 @@
 import type { Evento } from "../types/Evento";
-import Eventbox from "./Eventbox";
+import EventBox from "./EventBox";
 
 function EventBoxList({ eventos }: { eventos: Evento[] }) {
     return (
-        <>
+        <div className="gridbox-event">
             {eventos.map((evento, index) => (
-                <Eventbox
+                <EventBox
                     id={evento.id}
                     nombreEvento={evento.nombreEvento}
                     organizador={evento.organizador}
@@ -17,7 +17,7 @@ function EventBoxList({ eventos }: { eventos: Evento[] }) {
                     key={index}
                 />
             ))}
-        </>
+        </div>
     );
 }
 
