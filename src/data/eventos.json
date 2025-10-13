@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1",
+        "nombreEvento": "Torneo Friday Night Magic",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Torneo Constructed",
+        "fecha": "2024-10-04",
+        "hora": "19:00",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Únete a nuestro tradicional Friday Night Magic donde los mejores jugadores de la ciudad se reúnen para competir en formato Estándar. El torneo contará con 4 rondas suizas seguido de playoffs para los top 4. Premios incluyen: 1er lugar - 6 boosters de la última expansión + playmat exclusivo; 2do lugar - 4 boosters; 3ro-4to lugar - 2 boosters cada uno. Todos los participantes recibirán una carta promocional exclusiva mientras duren las existencias. Inscripción: $15. Registro comienza a las 18:30. Se recomienda llegar temprano para asegurar tu lugar."
+    },
+    {
+        "id": "2",
+        "nombreEvento": "Prerelease de Duskmourn: House of Horror",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Prerelease",
+        "fecha": "2024-10-12",
+        "hora": "11:00",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Sé de los primeros en el mundo en experimentar la nueva expansión de Magic: The Gathering - Duskmourn: House of Horror. Cada participante recibirá un kit de prerelease que incluye 6 boosters de Duskmourn, una carta promocional foil con fecha de lanzamiento y una bolsa de dados especial de colección. Formato Sealed: construye tu mazo de 40 cartas con lo que abras en tus boosters. Ambiente casual perfecto para jugadores nuevos y experimentados. Premios garantizados para todos los participantes adicionales basados en record de victorias. Duración aproximada: 5-6 horas. Incluye refrigerios y bebidas para todos los jugadores."
+    },
+    {
+        "id": "3",
+        "nombreEvento": "Torneo Pokémon Liga Challenge",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Torneo Abierto",
+        "fecha": "2024-10-05",
+        "hora": "16:00",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Evento oficial Pokémon TCG League Challenge donde los entrenadores pueden ganar puntos de Championship Series y cartas promocionales exclusivas. Formato Standard según las reglas más recientes de Pokémon Organized Play. El torneo está abierto para todas las edades y niveles de experiencia, con categorías separadas para Junior, Senior y Master si hay suficientes participantes. Premios incluyen: cartas promocionales de Pokémon raros, sleeves temáticos, dados de energía especiales y boosters de las expansiones más recientes. Los ganadores también recibirán puntos de clasificación para torneos regionales. Entrenadores nuevos son bienvenidos - tenemos mazos de aprendizaje disponibles para préstamo."
+    },
+    {
+        "id": "4",
+        "nombreEvento": "Draft Retro: Khans of Tarkir",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Draft",
+        "fecha": "2024-10-08",
+        "hora": "18:30",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Revive uno de los formatos de draft más queridos en la historia de Magic: The Gathering con nuestro draft retro de Khans of Tarkir. Experimenta la emoción de las mecánicas Morph, Delve y la búsqueda de los temidos fetch lands. Cada jugador recibirá 3 boosters de Khans of Tarkir para el draft. Premios en crédito de tienda distribuidos según record: 3-0 recibe $25 en crédito, 2-1 recibe $15, 1-2 recibe $5. Todos los jugadores se quedan con las cartas que draftearon. Evento perfecto para coleccionistas y jugadores que buscan completar sus colecciones de esta clásica expansión. Nivel de competencia: intermedio a avanzado."
+    },
+    {
+        "id": "5",
+        "nombreEvento": "Commander Night: Batalla de los Planeswalkers",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Torneo Casual",
+        "fecha": "2024-10-11",
+        "hora": "20:00",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Noche dedicada al formato Commander/EDH donde la estrategia, la política de mesa y las combinaciones épicas toman el centro del escenario. Formato: partidas de 4 jugadores con emparejamiento aleatorio. Premios por logros especiales: 'Combo Más Creativo', 'Mejor Jugada Estratégica', 'Deal Maker del Año', y 'Último en Pie'. Ambiente casual y divertido - no se tolerarán actitudes tóxicas o comportamientos anti-juego. Tenemos mazos de Commander disponibles para préstamo si eres nuevo en el formato. Incluye pizza y refrescos para todos los participantes. Trae tu mazo favorito y prepárate para alianzas temporales y traiciones inevitables. Duración: hasta la 1:00 AM."
+    },
+    {
+        "id": "6",
+        "nombreEvento": "Yu-Gi-Oh! Regional Qualifier 2024",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Torneo Clasificatorio",
+        "fecha": "2024-10-14",
+        "hora": "10:00",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Torneo oficial de clasificación regional de Yu-Gi-Oh! donde los duelistas competirán por invitaciones al Championship Series Regional y puntos de clasificación nacional. Formato Advanced según la lista de cartas prohibidas y limitadas más reciente. Estructura: rondas suizas + top cut. Jueces certificados por Konami presentes durante todo el evento. Premios sustanciales incluyen: cartas promocionales exclusivas de Regional, playmats de edición limitada, invitaciones al Regional Championship, y paquetes de productos de las últimas expansiones. Registro temprano recomendado - se espera completar aforo. Los duelistas deben traer su deck list impresa y materiales de juego oficiales. Duración estimada: 8-10 horas."
+    },
+    {
+        "id": "7",
+        "nombreEvento": "Clase Introductoria: Aprende a Jugar Magic: The Gathering",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Clase Introductoria",
+        "fecha": "2024-10-06",
+        "hora": "12:00",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "¿Siempre quisiste aprender a jugar Magic pero no sabías por dónde empezar? Esta sesión introductoria gratuita es perfecta para principiantes absolutos. Nuestros instructores certificados te guiarán paso a paso a través de los conceptos básicos del juego: estructura de turno, tipos de cartas, maná, combate, y estrategias fundamentales. Cada participante recibirá un mazo de aprendizaje gratuito para llevarse a casa (hasta agotar existencias), además de materiales de referencia y acceso a nuestra comunidad de WhatsApp para seguir aprendiendo. No se necesita experiencia previa - solo trae tu curiosidad y ganas de divertirte. Perfecto para padres que quieren entender el juego de sus hijos, o amigos que quieren empezar juntos. Duración: 2-3 horas con descansos incluidos."
+    },
+    {
+        "id": "8",
+        "nombreEvento": "Torneo Pauper: Leyendas del Común",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Torneo Constructed",
+        "fecha": "2024-10-13",
+        "hora": "17:00",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Formato Pauper donde solo las cartas comunes son legales, demostrando que el poder no siempre viene con rarezas costosas. Descubre la profundidad estratégica y la increíble diversidad de este formato accesible donde la creatividad en la construcción de mazos brilla más que el presupuesto. Reglas: todas las cartas deben haber sido impresas en calidad común en algún set de Magic Online. Premios en boosters distribuidos proporcionalmente según participación. Ambiente ideal para jugadores que buscan un formato competitivo pero económico, y para coleccionistas que quieren dar uso a sus cartas comunes acumuladas. Tenemos mazos pauper disponibles para préstamo si quieres probar antes de invertir. Comunidad amigable y dispuesta a ayudar a nuevos jugadores del formato."
+    },
+    {
+        "id": "9",
+        "nombreEvento": "Gran Intercambio de Cartas y Coleccionables",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Intercambio",
+        "fecha": "2024-10-07",
+        "hora": "18:00",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Evento social dedicado al intercambio y comercio de cartas entre coleccionistas y jugadores. Trae tus cartas repetidas, rarezas que no usas, o colecciones completas que quieras rotar. Contaremos con mesas de evaluación gratuita donde nuestros expertos pueden ayudarte a determinar valores de mercado actualizados. Reglas del intercambio: respeto mutuo, negociaciones transparentes, y verificaciones de autenticidad disponibles. Ambiente familiar ideal para enseñar a nuevos coleccionistas sobre el valor y cuidado de las cartas. También aceptaremos donaciones de cartas comunes/no deseadas para nuestro programa de enseñanza para nuevos jugadores. Habrá descuentos especiales en productos de la tienda durante el evento, y rifas de productos entre todos los participantes cada hora."
+    },
+    {
+        "id": "10",
+        "nombreEvento": "Torneo Modern Horizons 3 Showcase",
+        "organizador": "Mythic Games Store",
+        "tipoEvento": "Torneo Modern",
+        "fecha": "2024-10-15",
+        "hora": "19:30",
+        "ubicacion": "Mythic Games Store, Calle del Dragón 123, Ciudad TCG",
+        "descripcion": "Sumérgete en el formato Modern con nuestro torneo especial dedicado a las impactantes cartas de Modern Horizons 3. Experimenta el meta más actualizado con las nuevas incorporaciones que han revolucionado el formato. Estructura competitiva con 5 rondas suizas y top 8 single elimination. Premios principales: 1er lugar - Caja completa de Modern Horizons 3 + $100 crédito en tienda; 2do lugar - Medio caja + $50 crédito; 3ro-4to - 12 boosters cada uno; 5to-8vo - 6 boosters cada uno. Todos los participantes en top 16 recibirán cartas promocionales exclusivas. Nivel de competencia: alto - recomendado para jugadores experimentados del formato Modern. Jueces nivel 2 disponibles para consultas de reglas complejas."
+    }
+]

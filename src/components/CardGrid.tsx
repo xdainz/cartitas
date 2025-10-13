@@ -3,7 +3,7 @@ import type { Product } from "../types/Product";
 
 function CardGrid({ products }: { products: Product[] }) {
     return (
-        <div className="col-sm-12 col-md-8 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+        <div className="card-grid col-sm-12 col-md-8">
             {products.map((product, index) => (
                 <Card
                     id={product.id}

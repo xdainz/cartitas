@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import JsonProducts from "../hooks/JsonProduct";
-import Button from "../components/Button";
 
 function ProductPage() {
     const { category, id } = useParams();
@@ -28,17 +27,23 @@ function ProductPage() {
                         ></img>
                     </div>
 
-                    <div className="">
-                        <h1 className="product-title">{product.name}</h1>
-                        <p className="product-text-muted">{product.brand}</p>
-                        <p className="product-text-muted">
+                    <div>
+                        <label className="product-title">{product.name}</label>
+                        <label className="product-text-muted">
+                            {product.brand}
+                        </label>
+                        <label className="product-text-muted">
                             Stock: {product.stock}
-                        </p>
-                        <h4 className="product-price">${product.price}</h4>
+                        </label>
+                        <label className="product-price">
+                            ${product.price}
+                        </label>
                         {product.stock ? (
-                            <Button>Agregar al carrito</Button>
+                            <button className="button">
+                                Agregar al carrito
+                            </button>
                         ) : (
-                            <p>ta agotao</p>
+                            <p className="box">ta agotao</p>
                         )}
                     </div>
                 </div>

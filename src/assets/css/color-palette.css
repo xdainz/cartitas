@@ -1,34 +1,33 @@
 :root {
-    /* hsl (fallback color) */
-    --bg-dark: hsl(277 100% 96%);
-    --bg: hsl(277 100% 100%);
-    --bg-light: hsl(277 100% 100%);
-    --text: hsl(280 100% 8%);
-    --text-muted: hsl(283 100% 29%);
-    --highlight: hsl(278 100% 100%);
+    --bg-dark: hsl(0, 0%, 80%);
+    --bg: hsl(0 0% 90%);
+    --bg-light: hsl(0 0% 100%);
+    --text: hsl(0, 0%, 20%);
+    --text-muted: hsl(0 0% 35%);
+    --highlight: hsl(0 100% 100%);
     --border: hsl(279 60% 58%);
     --border-muted: hsl(279 89% 71%);
     --primary: hsl(283 100% 29%);
-    --secondary: hsl(92 100% 8%);
-    --danger: hsl(4 99% 37%);
-    --warning: hsl(50 100% 12%);
-    --success: hsl(159 100% 9%);
-    --info: hsl(215 95% 42%);
-    /* oklch */
-    --bg-dark: oklch(0.92 0.1 312);
-    --bg: oklch(0.96 0.1 312);
-    --bg-light: oklch(1 0.1 312);
-    --text: oklch(0.15 0.2 312);
-    --text-muted: oklch(0.4 0.2 312);
-    --highlight: oklch(1 0.2 312);
-    --border: oklch(0.6 0.2 312);
-    --border-muted: oklch(0.7 0.2 312);
-    --primary: oklch(0.4 0.2 312);
-    --secondary: oklch(0.4 0.2 132);
-    --danger: oklch(0.5 0.2 30);
-    --warning: oklch(0.5 0.2 100);
-    --success: oklch(0.5 0.2 160);
-    --info: oklch(0.5 0.2 260);
+    --secondary: hsl(92, 100%, 20%);
+    --danger: oklch(0.5 0.16 30);
+    --warning: oklch(0.5 0.16 100);
+    --success: oklch(0.5 0.16 160);
+    --info: oklch(0.5 0.16 260);
+
+    /*bootstrap overrides*/
+    /*   --bs-primary: var(--primary);
+    --bs-primary-rgb: var(--primary);
+    --bs-secondary: var(--secondary);
+    --bs-secondary-rgb: var(--secondary);
+    --bs-danger: var(--danger);
+    --bs-danger-rgb: var(--danger);
+    --bs-warning: var(--warning);
+    --bs-warning-rgb: var(--warning);
+    --bs-success: var(--success);
+    --bs-success-rgb: var(--success);
+    --bs-info: var(--info);
+    --bs-info-rgb: var(--info); */
+
     --font: "Noto Sans", sans-serif;
 
     /* BOX SHADOW */
@@ -100,9 +99,18 @@ html.dark {
 }
 
 body {
-    background: var(--bg);
+    background: var(--bg-dark);
     color: var(--text);
     font-family: var(--font);
+}
+
+.link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 .main-content {
@@ -110,8 +118,8 @@ body {
 }
 
 .alert {
-    font-weight: 500;
-    color: var(--text);
+    font-weight: 400;
+    color: var(--highlight);
 }
 
 .alert a {
@@ -140,7 +148,7 @@ body {
 }
 
 .navbar {
-    background: var(--bg-light);
+    background: var(--bg);
     color: var(--text);
     border-radius: 1rem;
     margin-top: 1rem;
@@ -151,7 +159,7 @@ body {
 
 .nav-icon {
     text-decoration: none;
-    color: var(--text);
+    color: var(--primary);
     padding: 1rem;
     border-radius: 1rem;
     font-weight: 700;
@@ -171,7 +179,7 @@ body {
 }
 
 .box {
-    background: var(--gradient);
+    background: var(--bg);
     padding: 1.5rem;
     border-radius: 1rem;
     border: var(--border-card);
@@ -183,7 +191,7 @@ body {
 
 .login-box {
     padding: 1rem 4rem 2.5rem 4rem;
-    background: var(--gradient-hover);
+    background: var(--bg);
     box-shadow: var(--shadow-l);
 }
 
@@ -194,14 +202,14 @@ body {
 }
 
 .box-product {
-    transition: background-color 0.15s ease-in-out;
-    transition: box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding: 1rem;
     color: var(--text);
-    box-shadow: var(--shadow-m);
+    box-shadow: var(--shadow-s);
 }
 
 .box-product:hover {
-    background: var(--gradient-hover);
+    background: var(--bg-light);
     box-shadow: var(--shadow-l);
 }
 
@@ -216,7 +224,7 @@ body {
     width: 100%;
     aspect-ratio: 1/1;
     margin-bottom: 1rem;
-    box-shadow: var(--shadow-s);
+    box-shadow: var(--shadow-m);
 }
 
 .box-product-body {
@@ -225,6 +233,7 @@ body {
 
 .box-product-title {
     display: -webkit-box;
+    font-weight: bold;
     color: var(--text);
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -235,10 +244,51 @@ body {
     text-overflow: ellipsis;
 }
 
+.box-product-brand {
+    font-weight: 400;
+}
+
 .box-product-price {
     font-weight: bold;
     font-size: larger;
     color: var(--secondary);
+}
+
+.event-box {
+    background: var(--bg-light);
+}
+
+.event-body {
+    color: var(--text-muted);
+}
+
+.event-desc {
+    display: -webkit-box;
+    color: var(--text);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    min-height: 3lh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gridbox-event {
+    display: grid;
+    gap: 1rem;
+}
+
+.event-map {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-l);
+    height: 20rem;
+}
+
+.map-iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
 }
 
 .product-img {
@@ -266,8 +316,14 @@ body {
 .product-desc {
     margin-top: 1.5rem;
     padding: 1rem;
-    background-color: var(--bg-dark);
+    background-color: var(--bg);
     border-radius: 1rem;
+}
+
+.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
 }
 
 .boxes {
@@ -277,10 +333,10 @@ body {
 }
 
 .button {
-    background: var(--bg-light);
+    background: var(--bg);
     padding: 0.5rem 1rem 0.7rem 1rem;
     color: var(--text);
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 0.5rem;
     margin-top: 1.5rem;
     border: 1px var(--border);
@@ -289,22 +345,23 @@ body {
 }
 
 .button:hover {
+    color: var(--primary);
+    background: var(--bg-light);
     box-shadow: var(--shadow-l);
 }
 
 .footer {
-    background: var(--bg-light);
+    background: var(--bg-dark);
     color: var(--text-muted);
+}
 
-    .footer-link {
-        text-decoration: none;
-        color: var(--text-muted);
-        transition: color 0.15 ease-in-out;
-    }
-
-    .footer-link:hover {
-        color: var(--text);
-    }
+.footer-link {
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color 0.15s ease-in-out;
+}
+.footer-link:hover {
+    color: var(--primary);
 }
 
 .img-p {
@@ -324,7 +381,6 @@ body {
 .contenedor-p {
     width: 98%;
     max-height: 500px;
-
 }
 
 .text-move {
@@ -356,5 +412,4 @@ body {
 
 .mi-cont {
     margin-top: 150px;
-
 }
