@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <span className="container navbar">
+        <span className="container navbar fixed-top">
             <Link className="nav-icon" to="/">
                 LevelUp
             </Link>
