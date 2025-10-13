@@ -31,18 +31,69 @@
     --font: "Noto Sans", sans-serif;
 
     /* BOX SHADOW */
-    --shadow-s: inset 0 1px 2px #ffffff30, /*top light*/ 0 1px 2px #00000030,
-        /* dark shadow*/ 0 2px 4px #00000015;
+    --shadow-s: inset 0 1px 2px #ffffff30,
+        /*top light*/
+        0 1px 2px #00000030,
+        /* dark shadow*/
+        0 2px 4px #00000015;
     /* soft shadow*/
-    --shadow-m: inset 0 1px 2px #ffffff50, /*top light*/ 0 2px 4px #00000030,
-        /* dark shadow*/ 0 4px 8px #00000015;
+    --shadow-m: inset 0 1px 2px #ffffff50,
+        /*top light*/
+        0 2px 4px #00000030,
+        /* dark shadow*/
+        0 4px 8px #00000015;
     /* soft shadow*/
-    --shadow-l: inset 0 1px 2px #ffffff70, /*top light*/ 0 4px 6px #00000030,
-        /* dark shadow*/ 0 6px 10px #00000015;
+    --shadow-l: inset 0 1px 2px #ffffff70,
+        /*top light*/
+        0 4px 6px #00000030,
+        /* dark shadow*/
+        0 6px 10px #00000015;
     /* soft shadow*/
+
+    --gradient: linear-gradient(0deg, var(--bg-dark) 95%, var(--bg));
+    --gradient-hover: linear-gradient(0deg, var(--bg-dark), var(--bg));
 
     --border-card: solid 1px var(--bg);
 }
+
+html.dark {
+    /* hsl (fallback color) */
+    --bg-dark: hsl(274 100% 4%);
+    --bg: hsl(279 100% 7%);
+    --bg-light: hsl(281 100% 10%);
+    --text: hsl(277 100% 100%);
+    --text-muted: hsl(277 51% 75%);
+    --highlight: hsl(280 57% 45%);
+    --border: hsl(283 100% 29%);
+    --border-muted: hsl(284 100% 17%);
+    --primary: hsl(278 100% 79%);
+    --secondary: hsl(87 70% 46%);
+    --danger: hsl(7 100% 66%);
+    --warning: hsl(53 100% 21%);
+    --success: hsl(162 100% 22%);
+    --info: hsl(217 100% 70%);
+    /* oklch */
+    --bg-dark: oklch(0.1 0.1 312);
+    --bg: oklch(0.15 0.1 312);
+    --bg-light: oklch(0.2 0.1 312);
+    --text: oklch(0.96 0.1 312);
+    --text-muted: oklch(0.76 0.1 312);
+    --highlight: oklch(0.5 0.2 312);
+    --border: oklch(0.4 0.2 312);
+    --border-muted: oklch(0.3 0.2 312);
+    --primary: oklch(0.76 0.2 312);
+    --secondary: oklch(0.76 0.2 132);
+    --danger: oklch(0.7 0.2 30);
+    --warning: oklch(0.7 0.2 100);
+    --success: oklch(0.7 0.2 160);
+    --info: oklch(0.7 0.2 260);
+
+    --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-light));
+    --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-light));
+
+    --border-card: solid 1px var(--bg);
+}
+
 &::-webkit-scrollbar {
     display: none;
 }
