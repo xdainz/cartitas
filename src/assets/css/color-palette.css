@@ -288,7 +288,7 @@ body {
 .product-desc {
     margin-top: 1.5rem;
     padding: 1rem;
-    background-color: var(--bg-dark);
+    background-color: var(--bg);
     border-radius: 1rem;
 }
 
