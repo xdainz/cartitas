@@ -289,7 +289,14 @@ body {
 .card-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    grid-template-columns: 1fr;
+}
+
+/*grid responsivo :vv*/
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .boxes {
