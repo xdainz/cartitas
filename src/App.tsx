@@ -10,6 +10,7 @@ import ProductPage from "./pages/ProductPage";
 import Layout from "./layout/Layout";
 import NotFound from "./pages/404";
 import Eventos from "./pages/Eventos";
+import Carrito from "./pages/Carrito";
 function App() {
     return (
         <>
@@ -23,6 +24,7 @@ function App() {
                         element={<ProductPage />}
                     />
                     <Route path="/Eventos" element={<Eventos />} />
+                    <Route path="/Carrito" element={<Carrito />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
 
