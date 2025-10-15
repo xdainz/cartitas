@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import users from "../data/user.json";
 
 function Login() {
     useEffect(() => {
@@ -21,8 +22,14 @@ function Login() {
         form.addEventListener("submit", function (e) {
             e.preventDefault(); // evita recargar la página
 
+            const user = users.find(
+                (u) =>
+                    (u.email.toLowerCase() === email.value.toLowerCase() || u.name.toLowerCase() === email.value.toLowerCase()) &&
+                    u.password === password.value
+            );
+
             // simulamos que sea correcto
-            if (email.value === "admin" && password.value === "123456") {
+            if (user) {
                 loginMessage.classList.remove("d-none");
                 loginMessage.classList.remove("alert-danger");
                 loginMessage.classList.add("alert-success");
@@ -61,7 +68,7 @@ function Login() {
                                     Correo
                                 </label>
                                 <input
-                                    type="email"
+                                    type="text"
                                     className="form-control"
                                     id="email"
                                     placeholder="Ingresa tu correo"
